@@ -6,10 +6,21 @@ using System.Threading.Tasks;
 
 namespace Tpinfo6
 {
+    enum Jours
+    {
+        Lundi,
+        Mardi,
+        Mercredi,
+        Jeudi,
+        Vendredi,
+        Samedi,
+        Dimanche
+    }
     class Program
     {
         static void Main(string[] args)
         {
+
         }
     }
 }
