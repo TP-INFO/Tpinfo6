@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Tpinfo6
 {
+    
     enum Jours
     {
         Lundi,
@@ -18,9 +19,30 @@ namespace Tpinfo6
     }
     class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-
+            
+            
+            switch (Jours)
+            {
+                case Jours.Lundi:
+                    
+                    break;
+                case Jours.Mardi:
+                    break;
+                case Jours.Mercredi:
+                    break;
+                case Jours.Jeudi:
+                    break;
+                case Jours.Vendredi:
+                    break;
+                case Jours.Samedi:
+                    break;
+                case Jours.Dimanche:
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }

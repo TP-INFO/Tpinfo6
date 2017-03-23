@@ -63,8 +63,8 @@
     <Compile Include="Seau.cs" />
     <Compile Include="Soleil.cs" />
     <Compile Include="Virus.cs" />
-    <Compile Include="VivantEnMouvement.cs" />
-    <Compile Include="VivantNonEnMouvement.cs" />
+    <Compile Include="Animal.cs" />
+    <Compile Include="Végétal.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
