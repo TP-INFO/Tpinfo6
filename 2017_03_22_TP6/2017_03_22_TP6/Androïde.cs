@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace _2017_03_22_TP6
 {
-    class Androïde
+    public class Androïde : NonVivant, IMarcher
     {
+        public void Marcher()
+        {
+            Console.WriteLine("L'androïde se déplace!");
+        }
     }
 }

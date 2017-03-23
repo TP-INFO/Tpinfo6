@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _2017_03_22_TP6
 {
-    public abstract class Animal : EtreVivant
+    public abstract class Animal : EtreVivant, IMarcher
     {
         protected string _nom;
 

@@ -55,6 +55,7 @@
     <Compile Include="Dindon.cs" />
     <Compile Include="EtreVivant.cs" />
     <Compile Include="Humain.cs" />
+    <Compile Include="IMarcher.cs" />
     <Compile Include="Lune.cs" />
     <Compile Include="Maïs.cs" />
     <Compile Include="NonVivant.cs" />

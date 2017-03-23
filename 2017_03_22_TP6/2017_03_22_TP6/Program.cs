@@ -47,7 +47,7 @@ namespace _2017_03_22_TP6
             DateTime dls = Convert.ToDateTime(dateLeverSoleilLundi);
             DateTime dcs = Convert.ToDateTime(dateCoucherSoleilLundi);
             Soleil soleil = new Soleil(dls, dcs);
-            TimeSpan ts1 = new TimeSpan(1, 0, 3, 0);
+            TimeSpan ts = new TimeSpan(1, 0, 3, 0);
 
             int jour = (int)Jours.Lundi;
             Console.WriteLine();
@@ -75,7 +75,8 @@ namespace _2017_03_22_TP6
                         chien.SEndormir();
                         dindon.SEndormir();
                         chevre.SEndormir();
-
+                        mari.SEndormir();
+                        femme.SEndormir();
                         Console.WriteLine();
                         break;
                     case 2:
@@ -95,6 +96,11 @@ namespace _2017_03_22_TP6
                         chien.CourirApres(chien, dindon);
                         lune.SeLever(dll);
                         soleil.SeCoucher(dcs);
+                        chien.SEndormir();
+                        dindon.SEndormir();
+                        chevre.SEndormir();
+                        mari.SEndormir();
+                        femme.SEndormir();
                         Console.WriteLine();
                         break;
                     case 3:
@@ -114,6 +120,11 @@ namespace _2017_03_22_TP6
                         chien.CourirApres(chien, dindon);
                         lune.SeLever(dll);
                         soleil.SeCoucher(dcs);
+                        chien.SEndormir();
+                        dindon.SEndormir();
+                        chevre.SEndormir();
+                        mari.SEndormir();
+                        femme.SEndormir();
                         Console.WriteLine();
                         break;
                     case 4:
@@ -133,6 +144,11 @@ namespace _2017_03_22_TP6
                         chien.CourirApres(chien, dindon);
                         lune.SeLever(dll);
                         soleil.SeCoucher(dcs);
+                        chien.SEndormir();
+                        dindon.SEndormir();
+                        chevre.SEndormir();
+                        mari.SEndormir();
+                        femme.SEndormir();
                         Console.WriteLine();
                         break;
                     case 5:
@@ -152,6 +168,11 @@ namespace _2017_03_22_TP6
                         chien.CourirApres(chien, dindon);
                         lune.SeLever(dll);
                         soleil.SeCoucher(dcs);
+                        chien.SEndormir();
+                        dindon.SEndormir();
+                        chevre.SEndormir();
+                        mari.SEndormir();
+                        femme.SEndormir();
                         Console.WriteLine();
                         break;
                     case 6:
@@ -171,6 +192,11 @@ namespace _2017_03_22_TP6
                         chien.CourirApres(chien, dindon);
                         lune.SeLever(dll);
                         soleil.SeCoucher(dcs);
+                        chien.SEndormir();
+                        dindon.SEndormir();
+                        chevre.SEndormir();
+                        mari.SEndormir();
+                        femme.SEndormir();
                         Console.WriteLine();
                         break;
                     case 7:
@@ -190,6 +216,12 @@ namespace _2017_03_22_TP6
                         chien.CourirApres(chien, dindon);
                         lune.SeLever(dll);
                         soleil.SeCoucher(dcs);
+                        chien.SEndormir();
+                        dindon.SEndormir();
+                        chevre.SEndormir();
+                        mari.SEndormir();
+                        femme.SEndormir();
+                        Console.WriteLine();
                         break;
                     default:
                         break;
