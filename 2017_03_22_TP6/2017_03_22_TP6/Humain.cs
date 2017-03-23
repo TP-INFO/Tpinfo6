@@ -21,7 +21,9 @@ namespace _2017_03_22_TP6
         {
             base.SEndormir();
         }
-
-        public void 
+        public override void Manger()
+        {
+            base.Manger();
+        }
     }
 }

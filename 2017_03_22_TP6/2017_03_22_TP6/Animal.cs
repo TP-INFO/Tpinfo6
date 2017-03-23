@@ -21,24 +21,23 @@ namespace _2017_03_22_TP6
                 _nom = value;
             }
         }
-        public virtual void EnMouvement()
-        {
-            
-        }
 
         public virtual void SeRéveiller()
         {
-            Console.WriteLine("{0} se réveille", Nom);
+            Console.WriteLine("{0} se réveille!", Nom);
         }
         public virtual void SEndormir()
         {
-            Console.WriteLine("{0} s'endort!", Nom);
+            Console.WriteLine("{0} s'endort: zzzzz!", Nom);
+        }
+        public virtual void Manger()
+        {
+            Console.WriteLine("{0} mange : 'chomp, chomp'", Nom);
         }
         public override void Mourir()
         {
             base.Mourir();
             Console.WriteLine("{0} est mort(e)! RIP {0}!", Nom);
-            
         }
     }
 }

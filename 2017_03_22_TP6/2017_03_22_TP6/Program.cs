@@ -60,8 +60,11 @@ namespace _2017_03_22_TP6
                     chevre.Beler();
                     lune.SeCoucher(dcl);
                     femme.SeRéveiller();
-
+                    mari.SeRéveiller();
+                    chien.CourirApres(chien, chevre);
                     couteau.TuerAnimal(chevre);
+                    chien.Manger();
+                    chien.CourirApres(chien, dindon);
                     lune.SeLever(dll);
                     soleil.SeCoucher(dcs);
                     jour++;

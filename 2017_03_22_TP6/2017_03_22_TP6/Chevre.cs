@@ -12,7 +12,18 @@ namespace _2017_03_22_TP6
         {
             base.SeRéveiller();
         }
-
+        public override void SEndormir()
+        {
+            base.SEndormir();
+        }
+        public override void Marcher()
+        {
+            base.Marcher();
+        }
+        public override void Manger()
+        {
+            base.Manger();
+        }
         public void Beler()
         {
             Console.WriteLine("bêêêêêêê!");
