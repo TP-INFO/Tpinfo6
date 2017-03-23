@@ -26,6 +26,7 @@ namespace _2017_03_22_TP6
             Chevre chevre = new Chevre();
             chevre.Nom = "biquette";
             Dindon dindon = new Dindon();
+            dindon.Nom = "dindidounette";
             Couteau couteau = new Couteau();
             couteau.Type = "opinelle";
             string dateCoucherLuneLundi = "2112-05-05T07:07:07";
@@ -47,6 +48,8 @@ namespace _2017_03_22_TP6
             {
                 case 1:
                     soleil.SeLever(dls);
+                    dindon.SeRéveiller();
+                    dindon.Glouglouter();
                     chien.SeRéveiller();
                     chien.Aboyer();
                     chevre.SeRéveiller();
