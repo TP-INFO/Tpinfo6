@@ -21,5 +21,10 @@ namespace Tpinfo6
         {
 
         }
-    }
+
+        public void Mourrir()
+        {
+
+        }
+    }//End of Class
 }

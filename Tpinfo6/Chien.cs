@@ -37,8 +37,8 @@ namespace Tpinfo6
         /// </summary>
         public void RemuerLaQueue()
         {
-            Console.WriteLine(Nom + " semble être heureux d'être avec vous !\n");
-            Console.WriteLine(Nom + " remue la queue ..");
+            Console.WriteLine("\n" + Nom + " semble être heureux d'être avec vous !\n" +
+                              Nom + " remue la queue ..");
         }
 
         /*──────────────────|
@@ -52,5 +52,7 @@ namespace Tpinfo6
         {
 
         }
-    }
+
+
+    }//End of Class
 }

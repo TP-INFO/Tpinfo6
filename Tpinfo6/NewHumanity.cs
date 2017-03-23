@@ -11,10 +11,16 @@ namespace Tpinfo6
         /*──────────────────|
         |     Attributs     |
         |──────────────────*/
-
+        private string _userChoice;
         private string _nom;
         private string _prenom;
         private int _age;
+
+        public string UserChoice
+        {
+            get { return this._userChoice; }
+            set { _userChoice = value; }
+        }
 
         public string Nom
         {
@@ -58,6 +64,11 @@ namespace Tpinfo6
         }
 
         public virtual void ToDo()
+        {
+
+        }
+        
+        public virtual void Mourrir()
         {
 
         }

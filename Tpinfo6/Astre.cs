@@ -8,9 +8,18 @@ namespace Tpinfo6
 {
     public abstract class Astre
     {
+        /*──────────────────|
+        |     Attributs     |
+        |──────────────────*/
+
         public bool nuit = true;
 
-       public virtual void SeLever()
+
+        /*──────────────────|
+        |      Méthodes     |
+        |──────────────────*/
+
+        public virtual void SeLever()
         {
         }
         public virtual void SeCoucher()

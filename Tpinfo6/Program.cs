@@ -10,9 +10,7 @@ namespace Tpinfo6
     {
         static void Main(string[] args)
         {
-
-            //ToDo : Demander User de composer son histoire en choisissant Jour, (via switch)
-
+            
             Console.Write("╔═══════════════════════════════════════╗\n" +
                           "║                                       ║\n" +
                           "║                                       ║\n" +
@@ -20,9 +18,8 @@ namespace Tpinfo6
                           "║                                       ║\n" +
                           "║                                       ║\n" +
                           "╚═══════════════════════════════════════╝\n");
-            Console.WriteLine("Nous sommes en 2110, et vous allez devoir vous occuper d'une ferme ..\n");
-
-            Console.WriteLine("Avant de commencer nous allons personnaliser votre expérience : \n");
+            Console.WriteLine("Nous sommes en 2110, et vous allez devoir vous occuper d'une ferme ..\n" +
+                              "Avant de commencer nous allons personnaliser votre expérience : \n");
 
             Soleil Sun = new Soleil();
             Sun.SeLever();
@@ -31,20 +28,32 @@ namespace Tpinfo6
             Humain Homme = new Humain();
             Homme.Prenom = Console.ReadLine();
 
-            //Console.WriteLine("Quel sera le prénom de sa compagne ?\n");
-            //Humain Femme = new Humain();
-            //Femme.Prenom = Console.ReadLine();
+            Console.WriteLine("\n" + Homme.Prenom + " est-il accompagné dans la vie ? (o/n)\n");
+            Homme.CreateWife();
 
-            Console.WriteLine("\nVous possédez un chien, comment s'appelle-t-il ?\n");
+            Console.WriteLine("Vous possédez un chien, comment s'appelle-t-il ?\n");
             Chien Dog = new Chien();
             Dog.Nom = Console.ReadLine();
             Dog.RemuerLaQueue();
 
-            Homme.SeDeplacer();
+            Humanoide Pepper = new Humanoide("Pepper");
+            Console.WriteLine("Votre humanoïde s'appelle " + Pepper.Nom + "\n" +
+                              "Il effectuera les tâches les plus ingrates pour vous, c'est un allier précieux.");
 
 
+            //Homme.SeDeplacer();
 
 
+            /*ToDo == Afficher résumé des précedentes saisies (Homme, Femme, Chien) avant démarrage de l'histoire
+                      Présenter le Contexte et mettre en place la semaine
+
+                      Définir des méthodes d'actions pour les Clones, Androides, Humanoides
+                      Définir les méthodes d'actions pour les animaux
+
+                      Définir pour chaques jour des changements d'états dans les arbres et plantes
+                      Mettre en place fonction Flemme() == Permet de sauter des jours de la semaine
+                      Mettre en place fonction ActionMax() == Terminé la journée "J'en ai marre" + RentrerChezSoi()
+            */
 
 
         }//End of Main
