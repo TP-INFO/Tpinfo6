@@ -29,6 +29,10 @@ namespace _2017_03_22_TP6
             dindon.Nom = "dindidounette";
             Couteau couteau = new Couteau();
             couteau.Type = "opinelle";
+            Humain femme = new Humain();
+            femme.Nom = "Gertrude";
+            Humain mari = new Humain();
+            mari.Nom = "Gustave";
             string dateCoucherLuneLundi = "2112-05-05T07:07:07";
             string dateLeverLuneLundi = "2112-05-05T18:18:18";
             DateTime dll = Convert.ToDateTime(dateLeverLuneLundi);
@@ -55,6 +59,8 @@ namespace _2017_03_22_TP6
                     chevre.SeRéveiller();
                     chevre.Beler();
                     lune.SeCoucher(dcl);
+                    femme.SeRéveiller();
+
                     couteau.TuerAnimal(chevre);
                     lune.SeLever(dll);
                     soleil.SeCoucher(dcs);
