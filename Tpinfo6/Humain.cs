@@ -10,18 +10,30 @@ namespace Tpinfo6
     {
         //private string userChoice; Implémenter dans classe mère ..
 
-      /*──────────────────|
-      |      Méthodes     |
-      |──────────────────*/
-       
-       /// <summary>
+        /*──────────────────|
+        |      Méthodes     |
+        |──────────────────*/
+
+        /// <summary>
+        /// Permet de rentrer après une dure journée ..
+        /// </summary>
+        public override void RentrerChezSoi()
+        {
+            //base.RentrerChezSoi();
+            Console.WriteLine(Prenom + " se met en route ..");
+            Console.WriteLine("[...]");
+
+            //Implémenter retour à la maison
+        }
+
+        /// <summary>
         /// Permet a un Humain de se déplaçer
         /// </summary>
-       public override void SeDeplacer()
+        public override void SeDeplacer()
         {
             Console.WriteLine("\nOù voulez-vous que " + Prenom + " se déplaçe ?\n");
-            Console.WriteLine("-1- Sur son champs\n"+
-                              "-2- Dans sa maison\n"+
+            Console.WriteLine("-1- Sur son champs\n" +
+                              "-2- Dans sa maison\n" +
                               "-3- Dans sa cuisine\n");
             UserChoice = Console.ReadLine();
 
@@ -56,10 +68,10 @@ namespace Tpinfo6
             //Console.WriteLine(Prenom + " va au travail ..");
         }
 
-       /// <summary>
+        /// <summary>
         /// Permet a un Humain d'effectuer des actions
         /// </summary>
-       public override void ToDo()
+        public override void ToDo()
         {
             Console.WriteLine("Que va faire " + Prenom + " maintenant ?\n");
             Console.WriteLine("-1- Tailler ses arbres\n" +
@@ -87,7 +99,7 @@ namespace Tpinfo6
                     switch (UserChoice)
                     {
                         case "1":
-                            Console.WriteLine(Prenom + " taille le cerisier");
+                            Console.WriteLine(Prenom + " taille le cerisier"); //Ajouter un Random de résultats après taille
                             ToDo();
                             break;
                         case "2":
@@ -96,14 +108,14 @@ namespace Tpinfo6
                             break;
                         case "0":
                             Console.WriteLine(Prenom + " rentre chez lui");
-                            SeDeplacer();
+                            SeDeplacer(); //Remplaçer par RentrerChezSoi()
                             break;
                         default:
                             Console.WriteLine("Une erreur est survenu ..");
                             ToDo();
                             break;
                     }
-                    //TODO Add Action.
+
                     break;
                 case "2": /*Ramasser les fruits*/
                     Console.WriteLine(Prenom + " se met en route ..\n");
@@ -118,15 +130,20 @@ namespace Tpinfo6
                             //TODO Random Fruits et légumes (+Voir instanciation)
                             break;
                         case "2":
+                            Console.WriteLine(Prenom + " va ramasser des abricots");
+                            break;
+                        //ToDO == Ajouter le Random Abricot
                         default:
+                            Console.WriteLine("Une erreur est survenu ..");
+                            ToDo();
                             break;
                     }
-                    //TODO Add Action.
+
                     break;
                 case "3": /*Labourer le champs*/
                     //TODO Add Action.
                     break;
-                case "0":
+                case "0": /*Rentrer chez Soi*/
                     Console.WriteLine(Prenom + " rentre chez lui");
                     SeDeplacer();
                     break;
@@ -136,10 +153,10 @@ namespace Tpinfo6
             }
         }
 
-       /// <summary>
-       /// Permet à un Homme de créer sa Femme (..ou pas!)
-       /// </summary>
-       public void CreateWife()
+        /// <summary>
+        /// Permet à un Homme de créer sa Femme (..ou pas!)
+        /// </summary>
+        public void CreateWife()
         {
             UserChoice = Console.ReadLine();
 
@@ -158,24 +175,24 @@ namespace Tpinfo6
                     ///<summary>
                     ///Switch-Alt pour Case "n"
                     /// </summary>
-                    switch (UserChoice) 
-                        {
-                            case "o":
-                                Console.WriteLine("\nJe vois que vous êtes revenu à la raison,\n" +
-                                                  " Quelle sera donc son prénom ?");
-                                Femme = new Humain();
-                                Femme.Prenom = Console.ReadLine();
-                                Console.WriteLine("\nExcellent choix,\n" +
-                                                   Femme.Prenom + " est un très beau prénom !");
-                                break;
-                            case "n":
-                                Console.WriteLine("Ne venez pas vous plaindre d'avoir trop de travail !");
-                                break;
-                            default:
-                                Console.WriteLine("Erreur de saisie, veuillez recommencer ..");
-                                CreateWife();
-                                break;
-                        }
+                    switch (UserChoice)
+                    {
+                        case "o":
+                            Console.WriteLine("\nJe vois que vous êtes revenu à la raison,\n" +
+                                              " Quelle sera donc son prénom ?");
+                            Femme = new Humain();
+                            Femme.Prenom = Console.ReadLine();
+                            Console.WriteLine("\nExcellent choix,\n" +
+                                               Femme.Prenom + " est un très beau prénom !");
+                            break;
+                        case "n":
+                            Console.WriteLine("Ne venez pas vous plaindre d'avoir trop de travail !");
+                            break;
+                        default:
+                            Console.WriteLine("Erreur de saisie, veuillez recommencer ..");
+                            CreateWife();
+                            break;
+                    }
                     break;
                 default:
                     Console.WriteLine("Erreur de saisie, veuillez recommencer ..");
@@ -184,10 +201,10 @@ namespace Tpinfo6
             }
         }
 
-       /*──────────────────|
-       |   Constructeurs   |
-       |──────────────────*/
-       
+        /*──────────────────|
+        |   Constructeurs   |
+        |──────────────────*/
+
         /// <summary>
         /// Default Constructor Human Class
         /// </summary>
@@ -197,9 +214,9 @@ namespace Tpinfo6
         }
 
 
-        public Humain(string Nom, string Prenom) :base()
+        public Humain(string Nom, string Prenom) : base()
         {
-            
+
         }
     }//End of Class
 }

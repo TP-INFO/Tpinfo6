@@ -53,6 +53,11 @@ namespace Tpinfo6
         //                  "╚═══════════════════════════════════════╝\n");
         //}
 
+        public virtual void RentrerChezSoi()
+        {
+
+        }
+
         public virtual void SeDeplacer() //Voir si ces méthodes ne peuvent pas être coupler avec : Animal
         {
             
