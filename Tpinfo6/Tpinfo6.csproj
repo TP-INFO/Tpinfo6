@@ -43,6 +43,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abricotier.cs" />
+    <Compile Include="Animal.cs" />
+    <Compile Include="Astre.cs" />
+    <Compile Include="Cerisier.cs" />
+    <Compile Include="Chevre.cs" />
+    <Compile Include="Chien.cs" />
+    <Compile Include="Chou.cs" />
+    <Compile Include="Clone.cs" />
+    <Compile Include="Couteau.cs" />
+    <Compile Include="Dindon.cs" />
+    <Compile Include="Flora.cs" />
+    <Compile Include="Humain.cs" />
+    <Compile Include="Humanoide.cs" />
+    <Compile Include="Lune.cs" />
+    <Compile Include="Mais.cs" />
+    <Compile Include="NewHumanity.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
