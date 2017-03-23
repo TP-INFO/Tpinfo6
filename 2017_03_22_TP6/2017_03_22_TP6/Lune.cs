@@ -8,18 +8,18 @@ namespace _2017_03_22_TP6
 {
     public class Lune : Astre
     {
-        public Lune(DateTime dtHLever, DateTime dtHCoucher):base(dtHLever, dtHCoucher)
+        public Lune()
         {
             
         }
 
-        public override void SeLever(DateTime dtHLever)
+        public override void SeLever()
         {
-            Console.WriteLine("La lune se lève, il est {0}", dtHLever);
+            Console.WriteLine("La lune se lève");
         }
-        public override void SeCoucher(DateTime dtHCoucher)
+        public override void SeCoucher()
         {
-            Console.WriteLine("La lune se couche, il est {0}", dtHCoucher);
+            Console.WriteLine("La lune se couche");
         }
 
     }

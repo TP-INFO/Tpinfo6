@@ -9,18 +9,26 @@ namespace _2017_03_22_TP6
     public class Soleil : Astre
     {
         
-        public Soleil(DateTime dtHLever, DateTime dtHCoucher): base(dtHLever, dtHCoucher)
+        public Soleil()
         {
            
         }
 
-        public override void SeLever(DateTime dtHLever)
+        public void PremierLever(DateTime dtHPremierLever)
         {
-            Console.WriteLine("Le soleil se lève, il est {0}", dtHLever); 
+            Console.WriteLine("Une nouvelle semaine commence à la ferme 'Farm 3000': le soleil se lève, nous sommes le {0}", dtHPremierLever);
         }
-        public override void SeCoucher(DateTime dtHCoucher)
+        public void DernierCoucher(DateTime dtHDernierCoucher)
         {
-            Console.WriteLine("Le soleil se couche, il est {0}", dtHCoucher);
+            Console.WriteLine("Encore une semaine qui se termine à la ferme 'Farm 3000': le soleil se couche, nous sommes le {0}", dtHDernierCoucher);
+        }
+        public override void SeLever()
+        {
+            Console.WriteLine("Le soleil se lève"); 
+        }
+        public override void SeCoucher()
+        {
+            Console.WriteLine("Le soleil se couche");
         }
     }
 }

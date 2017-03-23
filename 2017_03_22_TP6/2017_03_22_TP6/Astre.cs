@@ -36,14 +36,14 @@ namespace _2017_03_22_TP6
             }
         }
 
-        public Astre(DateTime dtHLever, DateTime dtHCoucher)
+        public Astre()
         {
-            _dtHLever= dtHLever;
-            _dtHCoucher = dtHCoucher;
-        }
-        abstract public void SeLever(DateTime dtHLever);        
 
-        abstract public void SeCoucher(DateTime dtHCoucher);
+        }
+
+        abstract public void SeLever();        
+
+        abstract public void SeCoucher();
 
     }
 }
