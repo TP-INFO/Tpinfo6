@@ -36,19 +36,16 @@ namespace Tpinfo6
         /// Méthode permettant de créer une histoire personnalisée 
         /// ....
         /// </summary>
-        public void ToBegin()
-        {
-            Console.Write("╔═══════════════════════════════════════╗\n" +
-                          "║                                       ║\n" +
-                          "║                                       ║\n" +
-                          "║         Welcome in Futur Farm         ║\n" +
-                          "║                                       ║\n" +
-                          "║                                       ║\n" +
-                          "╚═══════════════════════════════════════╝\n");
-
-
-
-        }
+        //public virtual void ToBegin() //ToDo Utilité ?
+        //{
+        //    Console.Write("╔═══════════════════════════════════════╗\n" +
+        //                  "║                                       ║\n" +
+        //                  "║                                       ║\n" +
+        //                  "║         Welcome in Futur Farm         ║\n" +
+        //                  "║                                       ║\n" +
+        //                  "║                                       ║\n" +
+        //                  "╚═══════════════════════════════════════╝\n");
+        //}
 
         public virtual void SeDeplacer() //Voir si ces méthodes ne peuvent pas être coupler avec : Animal
         {

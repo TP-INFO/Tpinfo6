@@ -13,6 +13,9 @@ namespace Tpinfo6
         |      Méthodes     |
         |──────────────────*/
 
+        /// <summary>
+        /// Permet au Soleil de SeLever()
+        /// </summary>
         public override void SeLever()
         {
             Console.WriteLine("Le jour se lève ..\n" +
@@ -20,11 +23,18 @@ namespace Tpinfo6
             nuit = false;
         }
 
+        /// <summary>
+        /// Permet au Soleil de SeCoucher()
+        /// </summary>
         public override void SeCoucher() 
         {
             Console.WriteLine("Le jour se couche ..\n");
             nuit = true;
         }
+
+        /*──────────────────|
+        |   Constructeurs   |
+        |──────────────────*/
 
         public Soleil()
         {

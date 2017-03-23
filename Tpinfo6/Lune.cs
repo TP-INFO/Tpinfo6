@@ -8,7 +8,13 @@ namespace Tpinfo6
 {
     public class Lune : Astre
     {
+       /*──────────────────|
+       |      Méthodes     |
+       |──────────────────*/
 
+        /// <summary>
+        /// Permet a la Lune de SeLever()
+        /// </summary>
         public override void SeLever()
         {
             Console.WriteLine("La nuit fait son apparition ..\n");
@@ -16,6 +22,9 @@ namespace Tpinfo6
             nuit = true;
         }
 
+        /// <summary>
+        /// Permet a la Lune de SeCoucher()
+        /// </summary>
         public override void SeCoucher()
         {
             Console.WriteLine("La lune disparaît dans le Crépuscule\n");
@@ -23,6 +32,10 @@ namespace Tpinfo6
             Console.WriteLine("Le jour se lève ..\n");
             nuit = false;
         }
+
+       /*──────────────────|
+       |   Constructeurs   |
+       |──────────────────*/
 
         public Lune()
         {

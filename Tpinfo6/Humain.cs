@@ -10,7 +10,13 @@ namespace Tpinfo6
     {
         private string userChoice;
 
-
+       /*──────────────────|
+       |      Méthodes     |
+       |──────────────────*/
+       
+        /// <summary>
+        /// Permet a un Humain de se déplaçer
+        /// </summary>
         public override void SeDeplacer()
         {
             Console.WriteLine("\nOù voulez-vous que " + Prenom + " se déplaçe ?\n");
@@ -24,7 +30,7 @@ namespace Tpinfo6
                 case "1":
                     Console.WriteLine(Prenom + " se met en route ..");
                     Console.WriteLine("[...]");
-
+                    ToDo();
                     //TODO Add Implementation with Clone & Android + Dog.
                     break;
                 case "2":
@@ -50,6 +56,9 @@ namespace Tpinfo6
             //Console.WriteLine(Prenom + " va au travail ..");
         }
 
+        /// <summary>
+        /// Permet a un Humain d'effectuer des actions
+        /// </summary>
         public override void ToDo()
         {
             Console.WriteLine("Que va faire " + Prenom + " maintenant ?\n");
@@ -127,6 +136,13 @@ namespace Tpinfo6
             }
         }
 
+       /*──────────────────|
+       |   Constructeurs   |
+       |──────────────────*/
+       
+        /// <summary>
+        /// Default Constructor Human Class
+        /// </summary>
         public Humain()
         {
 
