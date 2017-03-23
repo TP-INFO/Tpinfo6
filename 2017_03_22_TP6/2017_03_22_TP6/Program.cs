@@ -33,7 +33,7 @@ namespace _2017_03_22_TP6
             femme.Nom = "Gertrude";
             Humain mari = new Humain();
             mari.Nom = "Gustave";
-            string dateCoucherLuneLundi = "2112-05-05T07:07:07";
+            string dateCoucherLuneLundi = "2112-05-05T10:10:10";
             string dateLeverLuneLundi = "2112-05-05T18:18:18";
             DateTime dll = Convert.ToDateTime(dateLeverLuneLundi);
             DateTime dcl = Convert.ToDateTime(dateCoucherLuneLundi);
@@ -48,51 +48,146 @@ namespace _2017_03_22_TP6
 
             int jour = (int)Jours.Lundi;
             Console.WriteLine();
-            switch (jour)
+            while (jour!=7)
             {
-                case 1:
-                    soleil.SeLever(dls);
-                    dindon.SeRéveiller();
-                    dindon.Glouglouter();
-                    chien.SeRéveiller();
-                    chien.Aboyer();
-                    chevre.SeRéveiller();
-                    chevre.Beler();
-                    lune.SeCoucher(dcl);
-                    femme.SeRéveiller();
-                    mari.SeRéveiller();
-                    chien.CourirApres(chien, chevre);
-                    couteau.TuerAnimal(chevre);
-                    chien.Manger();
-                    chien.CourirApres(chien, dindon);
-                    lune.SeLever(dll);
-                    soleil.SeCoucher(dcs);
-                    jour++;
-
-                    break;
-                case 2:
-                    soleil.SeLever(dls);
-                    chien.SeRéveiller();
-                    chien.Aboyer();
-                    chevre.SeRéveiller();
-                    lune.SeCoucher(dcl);
-
-                    lune.SeLever(dll);
-                    soleil.SeCoucher(dcs);
-                    jour++;
-                    break;
-                case 3:
-                    break;
-                case 4:
-                    break;
-                case 5:
-                    break;
-                case 6:
-                    break;
-                case 7:
-                    break;
-                default:
-                    break;
+                switch (jour)
+                {
+                    case 1:
+                        Console.WriteLine(Jours.Lundi);
+                        soleil.SeLever(dls);
+                        dindon.SeRéveiller();
+                        dindon.Glouglouter();
+                        chien.SeRéveiller();
+                        chien.Aboyer();
+                        chevre.SeRéveiller();
+                        chevre.Beler();
+                        femme.SeRéveiller();
+                        lune.SeCoucher(dcl);
+                        mari.SeRéveiller();
+                        chien.CourirApres(chien, chevre);
+                        chien.Manger();
+                        chien.CourirApres(chien, dindon);
+                        lune.SeLever(dll);
+                        soleil.SeCoucher(dcs);
+                        Console.WriteLine();
+                        break;
+                    case 2:
+                        Console.WriteLine(Jours.Mardi);
+                        soleil.SeLever(dls);
+                        dindon.SeRéveiller();
+                        dindon.Glouglouter();
+                        chien.SeRéveiller();
+                        chien.Aboyer();
+                        chevre.SeRéveiller();
+                        chevre.Beler();
+                        femme.SeRéveiller();
+                        lune.SeCoucher(dcl);
+                        mari.SeRéveiller();
+                        chien.CourirApres(chien, chevre);
+                        chien.Manger();
+                        chien.CourirApres(chien, dindon);
+                        lune.SeLever(dll);
+                        soleil.SeCoucher(dcs);
+                        Console.WriteLine();
+                        break;
+                    case 3:
+                        Console.WriteLine(Jours.Mercredi);
+                        soleil.SeLever(dls);
+                        dindon.SeRéveiller();
+                        dindon.Glouglouter();
+                        chien.SeRéveiller();
+                        chien.Aboyer();
+                        chevre.SeRéveiller();
+                        chevre.Beler();
+                        femme.SeRéveiller();
+                        lune.SeCoucher(dcl);
+                        mari.SeRéveiller();
+                        chien.CourirApres(chien, chevre);
+                        chien.Manger();
+                        chien.CourirApres(chien, dindon);
+                        lune.SeLever(dll);
+                        soleil.SeCoucher(dcs);
+                        Console.WriteLine();
+                        break;
+                    case 4:
+                        Console.WriteLine(Jours.Jeudi);
+                        soleil.SeLever(dls);
+                        dindon.SeRéveiller();
+                        dindon.Glouglouter();
+                        chien.SeRéveiller();
+                        chien.Aboyer();
+                        chevre.SeRéveiller();
+                        chevre.Beler();
+                        femme.SeRéveiller();
+                        lune.SeCoucher(dcl);
+                        mari.SeRéveiller();
+                        chien.CourirApres(chien, chevre);
+                        chien.Manger();
+                        chien.CourirApres(chien, dindon);
+                        lune.SeLever(dll);
+                        soleil.SeCoucher(dcs);
+                        Console.WriteLine();
+                        break;
+                    case 5:
+                        Console.WriteLine(Jours.Vendredi);
+                        soleil.SeLever(dls);
+                        dindon.SeRéveiller();
+                        dindon.Glouglouter();
+                        chien.SeRéveiller();
+                        chien.Aboyer();
+                        chevre.SeRéveiller();
+                        chevre.Beler();
+                        femme.SeRéveiller();
+                        lune.SeCoucher(dcl);
+                        mari.SeRéveiller();
+                        chien.CourirApres(chien, chevre);
+                        chien.Manger();
+                        chien.CourirApres(chien, dindon);
+                        lune.SeLever(dll);
+                        soleil.SeCoucher(dcs);
+                        Console.WriteLine();
+                        break;
+                    case 6:
+                        Console.WriteLine(Jours.Samedi);
+                        soleil.SeLever(dls);
+                        dindon.SeRéveiller();
+                        dindon.Glouglouter();
+                        chien.SeRéveiller();
+                        chien.Aboyer();
+                        chevre.SeRéveiller();
+                        chevre.Beler();
+                        femme.SeRéveiller();
+                        lune.SeCoucher(dcl);
+                        mari.SeRéveiller();
+                        chien.CourirApres(chien, chevre);
+                        chien.Manger();
+                        chien.CourirApres(chien, dindon);
+                        lune.SeLever(dll);
+                        soleil.SeCoucher(dcs);
+                        Console.WriteLine();
+                        break;
+                    case 7:
+                        Console.WriteLine(Jours.Dimanche);
+                        soleil.SeLever(dls);
+                        dindon.SeRéveiller();
+                        dindon.Glouglouter();
+                        chien.SeRéveiller();
+                        chien.Aboyer();
+                        chevre.SeRéveiller();
+                        chevre.Beler();
+                        femme.SeRéveiller();
+                        lune.SeCoucher(dcl);
+                        mari.SeRéveiller();
+                        chien.CourirApres(chien, chevre);
+                        chien.Manger();
+                        chien.CourirApres(chien, dindon);
+                        lune.SeLever(dll);
+                        soleil.SeCoucher(dcs);
+                        break;
+                    default:
+                        break;
+                }
+                jour++;
             }
         }
     }
