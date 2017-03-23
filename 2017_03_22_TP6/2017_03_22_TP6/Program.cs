@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _2017_03_22_TP6
 {
-
+    
     enum Jours
     {
         Lundi=1,
@@ -33,18 +33,21 @@ namespace _2017_03_22_TP6
             femme.Nom = "Gertrude";
             Humain mari = new Humain();
             mari.Nom = "Gustave";
+
+
             string dateCoucherLuneLundi = "2112-05-05T10:10:10";
             string dateLeverLuneLundi = "2112-05-05T18:18:18";
             DateTime dll = Convert.ToDateTime(dateLeverLuneLundi);
             DateTime dcl = Convert.ToDateTime(dateCoucherLuneLundi);
             Lune lune = new Lune(dll, dcl);
-
+            
 
             string dateCoucherSoleilLundi = "2112-05-05T20:20:20";
             string dateLeverSoleilLundi = "2112-05-05T06:06:06";
             DateTime dls = Convert.ToDateTime(dateLeverSoleilLundi);
             DateTime dcs = Convert.ToDateTime(dateCoucherSoleilLundi);
             Soleil soleil = new Soleil(dls, dcs);
+            TimeSpan ts1 = new TimeSpan(1, 0, 3, 0);
 
             int jour = (int)Jours.Lundi;
             Console.WriteLine();
@@ -69,6 +72,10 @@ namespace _2017_03_22_TP6
                         chien.CourirApres(chien, dindon);
                         lune.SeLever(dll);
                         soleil.SeCoucher(dcs);
+                        chien.SEndormir();
+                        dindon.SEndormir();
+                        chevre.SEndormir();
+
                         Console.WriteLine();
                         break;
                     case 2:
