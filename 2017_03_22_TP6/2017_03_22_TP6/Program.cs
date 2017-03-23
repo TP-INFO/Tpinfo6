@@ -9,7 +9,7 @@ namespace _2017_03_22_TP6
 
     enum Jours
     {
-        Lundi,
+        Lundi=1,
         Mardi,
         Mercredi,
         Jeudi,
@@ -21,9 +21,13 @@ namespace _2017_03_22_TP6
     {
         public static void Main(string[] args)
         {
-            Chien mirza = new Chien();
-            Chevre biquette = new Chevre();
-
+            Chien chien = new Chien();
+            chien.Nom = "mirza";
+            Chevre chevre = new Chevre();
+            chevre.Nom = "biquette";
+            Dindon dindon = new Dindon();
+            Couteau couteau = new Couteau();
+            couteau.Type = "opinelle";
             string dateCoucherLuneLundi = "2112-05-05T07:07:07";
             string dateLeverLuneLundi = "2112-05-05T18:18:18";
             DateTime dll = Convert.ToDateTime(dateLeverLuneLundi);
@@ -37,32 +41,43 @@ namespace _2017_03_22_TP6
             DateTime dcs = Convert.ToDateTime(dateCoucherSoleilLundi);
             Soleil soleil = new Soleil(dls, dcs);
 
-            Jours jour = Jours.Lundi;
-
+            int jour = (int)Jours.Lundi;
+            Console.WriteLine();
             switch (jour)
             {
-                case Jours.Lundi:
+                case 1:
                     soleil.SeLever(dls);
-                    mirza.SeRéveiller();
-                    mirza.Aboyer();
+                    chien.SeRéveiller();
+                    chien.Aboyer();
+                    chevre.SeRéveiller();
+                    chevre.Beler();
+                    lune.SeCoucher(dcl);
+                    couteau.TuerAnimal(chevre);
+                    lune.SeLever(dll);
+                    soleil.SeCoucher(dcs);
+                    jour++;
+
+                    break;
+                case 2:
+                    soleil.SeLever(dls);
+                    chien.SeRéveiller();
+                    chien.Aboyer();
+                    chevre.SeRéveiller();
                     lune.SeCoucher(dcl);
 
                     lune.SeLever(dll);
                     soleil.SeCoucher(dcs);
-                    jour = Jours.Mardi;
+                    jour++;
                     break;
-                case Jours.Mardi:
-
+                case 3:
                     break;
-                case Jours.Mercredi:
+                case 4:
                     break;
-                case Jours.Jeudi:
+                case 5:
                     break;
-                case Jours.Vendredi:
+                case 6:
                     break;
-                case Jours.Samedi:
-                    break;
-                case Jours.Dimanche:
+                case 7:
                     break;
                 default:
                     break;
