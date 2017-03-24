@@ -6,17 +6,7 @@ using System.Threading.Tasks;
 
 namespace _2017_03_22_TP6
 {
-    
-    enum Jours
-    {
-        Lundi=1,
-        Mardi,
-        Mercredi,
-        Jeudi,
-        Vendredi,
-        Samedi,
-        Dimanche
-    }
+
     class Program
     {
         public static void Main(string[] args)
@@ -34,17 +24,16 @@ namespace _2017_03_22_TP6
             Humain mari = new Humain();
             mari.Nom = "Gustave";
             Lune lune = new Lune();
-            
 
-            string dateDernierCoucherSoleil = "2112-05-11T20:20:20";
             string datePremierLeverSoleil = "2112-05-05T06:06:06";
+            string dateDernierCoucherSoleil = "2112-05-11T20:20:20";
             DateTime dpls = Convert.ToDateTime(datePremierLeverSoleil);
             DateTime ddcs = Convert.ToDateTime(dateDernierCoucherSoleil);
             Soleil soleil = new Soleil();
 
             int jour = (int)Jours.Lundi;
             Console.WriteLine();
-            while (jour!=7)
+            while (jour!=8)
             {
                 switch (jour)
                 {
@@ -61,6 +50,7 @@ namespace _2017_03_22_TP6
                         lune.SeCoucher();
                         mari.SeRéveiller();
                         chien.CourirApres(chien, chevre);
+                        chien.SeDeplacer("gamelle");
                         chien.Manger();
                         chien.CourirApres(chien, dindon);
                         lune.SeLever();
@@ -85,6 +75,7 @@ namespace _2017_03_22_TP6
                         lune.SeCoucher();
                         mari.SeRéveiller();
                         chien.CourirApres(chien, chevre);
+                        chien.SeDeplacer("gamelle");
                         chien.Manger();
                         chien.CourirApres(chien, dindon);
                         lune.SeLever();
@@ -109,6 +100,7 @@ namespace _2017_03_22_TP6
                         lune.SeCoucher();
                         mari.SeRéveiller();
                         chien.CourirApres(chien, chevre);
+                        chien.SeDeplacer("gamelle");
                         chien.Manger();
                         chien.CourirApres(chien, dindon);
                         lune.SeLever();
@@ -133,6 +125,7 @@ namespace _2017_03_22_TP6
                         lune.SeCoucher();
                         mari.SeRéveiller();
                         chien.CourirApres(chien, chevre);
+                        chien.SeDeplacer("gamelle");
                         chien.Manger();
                         chien.CourirApres(chien, dindon);
                         lune.SeLever();
@@ -157,6 +150,7 @@ namespace _2017_03_22_TP6
                         lune.SeCoucher();
                         mari.SeRéveiller();
                         chien.CourirApres(chien, chevre);
+                        chien.SeDeplacer("gamelle");
                         chien.Manger();
                         chien.CourirApres(chien, dindon);
                         lune.SeLever();
@@ -181,6 +175,7 @@ namespace _2017_03_22_TP6
                         lune.SeCoucher();
                         mari.SeRéveiller();
                         chien.CourirApres(chien, chevre);
+                        chien.SeDeplacer("gamelle");
                         chien.Manger();
                         chien.CourirApres(chien, dindon);
                         lune.SeLever();
@@ -205,6 +200,7 @@ namespace _2017_03_22_TP6
                         lune.SeCoucher();
                         mari.SeRéveiller();
                         chien.CourirApres(chien, chevre);
+                        chien.SeDeplacer("gamelle");
                         chien.Manger();
                         chien.CourirApres(chien, dindon);
                         lune.SeLever();

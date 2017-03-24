@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _2017_03_22_TP6
 {
-    public abstract class Animal : EtreVivant, IMarcher
+    public abstract class Animal : EtreVivant, ISeDeplacer
     {
         protected string _nom;
 
@@ -38,6 +38,10 @@ namespace _2017_03_22_TP6
         {
             base.Mourir();
             Console.WriteLine("{0} est mort(e)! RIP {0}!", Nom);
+        }
+        public virtual void SeDeplacer(string destination)
+        {
+            Console.WriteLine("{0} se déplace vers {1}", Nom, destination);
         }
     }
 }

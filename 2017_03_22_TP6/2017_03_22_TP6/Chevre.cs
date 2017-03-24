@@ -16,9 +16,9 @@ namespace _2017_03_22_TP6
         {
             base.SEndormir();
         }
-        public override void Marcher()
+        public override void SeDeplacer(string destination)
         {
-            base.Marcher();
+            base.SeDeplacer(destination);
         }
         public override void Manger()
         {
