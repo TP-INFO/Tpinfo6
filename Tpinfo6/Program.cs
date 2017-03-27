@@ -38,10 +38,9 @@ namespace Tpinfo6
 
             Humanoide Pepper = new Humanoide("Pepper");
             Console.WriteLine("Votre humanoïde s'appelle " + Pepper.Nom + "\n" +
-                              "Il effectuera les tâches les plus ingrates pour vous, c'est un allier précieux.");
+                              "Il effectuera les tâches les plus ingrates pour vous, c'est un alliés précieux.");
 
-
-            //Homme.SeDeplacer();
+            Homme.SeDeplacer();
 
 
             /*ToDo == Afficher résumé des précedentes saisies (Homme, Femme, Chien) avant démarrage de l'histoire

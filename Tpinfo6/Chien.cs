@@ -41,6 +41,14 @@ namespace Tpinfo6
                               Nom + " remue la queue ..");
         }
 
+        /// <summary>
+        /// Permet à un chien de se lancer à la poursuite.
+        /// </summary>
+        public void Poursuivre()
+        {
+
+        }
+
         /*──────────────────|
         |   Constructeurs   |
         |──────────────────*/

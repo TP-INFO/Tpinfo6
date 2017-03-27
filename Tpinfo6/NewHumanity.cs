@@ -72,6 +72,11 @@ namespace Tpinfo6
         {
 
         }
+
+        public virtual void ToDoInHouse()
+        {
+
+        }
         
         public virtual void Mourrir()
         {

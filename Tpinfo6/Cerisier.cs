@@ -41,5 +41,13 @@ namespace Tpinfo6
             }
         }
 
+        /// <summary>
+        /// Fais mourrir un Cerisier
+        /// </summary>
+        public void Mourrir()
+        {
+            //ToDo == Faire mourrir selon un jour précis
+        }
+
     }
 }

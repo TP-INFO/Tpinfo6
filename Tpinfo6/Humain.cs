@@ -34,7 +34,7 @@ namespace Tpinfo6
             Console.WriteLine("\nOù voulez-vous que " + Prenom + " se déplaçe ?\n");
             Console.WriteLine("-1- Sur son champs\n" +
                               "-2- Dans sa maison\n" +
-                              "-3- Dans sa cuisine\n");
+                              "-0- Rentrer chez soi\n");
             UserChoice = Console.ReadLine();
 
             switch (UserChoice)
@@ -51,7 +51,7 @@ namespace Tpinfo6
 
                     //TODO Add Action.
                     break;
-                case "3":
+                case "0":
                     Console.WriteLine(Prenom + " se met en route ..");
                     Console.WriteLine("[...]");
 
@@ -65,7 +65,6 @@ namespace Tpinfo6
 
 
             Console.WriteLine("");
-            //Console.WriteLine(Prenom + " va au travail ..");
         }
 
         /// <summary>
@@ -76,8 +75,8 @@ namespace Tpinfo6
             Console.WriteLine("Que va faire " + Prenom + " maintenant ?\n");
             Console.WriteLine("-1- Tailler ses arbres\n" +
                               "-2- Ramasser des fruits\n" +
-                              "-3- Labourer le champs\n" +
                               "-0- Rentrer chez lui");
+
             UserChoice = Console.ReadLine();
 
             switch (UserChoice)
@@ -98,18 +97,22 @@ namespace Tpinfo6
                     /// </summary>
                     switch (UserChoice)
                     {
-                        case "1":
+                        case "1": /*Taille Cerisier*/ //ToDo == Ajouter Pepper qui ramasse un nombre de branches
                             Console.WriteLine(Prenom + " taille le cerisier"); //Ajouter un Random de résultats après taille
+                            
                             ToDo();
                             break;
-                        case "2":
+
+                        case "2": /*Taille Abricotier*/
                             Console.WriteLine(Prenom + " taille l'abricotier");
                             ToDo();
                             break;
-                        case "0":
+
+                        case "0": /*Rentrer chez Soi*/
                             Console.WriteLine(Prenom + " rentre chez lui");
                             SeDeplacer(); //Remplaçer par RentrerChezSoi()
                             break;
+
                         default:
                             Console.WriteLine("Une erreur est survenu ..");
                             ToDo();
@@ -117,41 +120,87 @@ namespace Tpinfo6
                     }
 
                     break;
+
                 case "2": /*Ramasser les fruits*/
                     Console.WriteLine(Prenom + " se met en route ..\n");
                     Console.WriteLine("[...]");
                     Console.WriteLine("Que vas-t'on ramasser en premier ?\n");
+
+                    Console.WriteLine("-1- Ramasser des cerises\n" +
+                                      "-2- Ramasser des abricots\n" +
+                                      "-0- Rentrer chez soi");
+
                     UserChoice = Console.ReadLine();
 
+                    ///<summary>
+                    ///Switch-Alt pour Case 2 -Ramasser-
+                    /// </summary>
                     switch (UserChoice)
                     {
-                        case "1":
+                        case "1": /*Ramasser Cerises*/
+
                             Console.WriteLine(Prenom + " va ramasser des cerises");
-                            //TODO Random Fruits et légumes (+Voir instanciation)
+                            Console.WriteLine("[...]\n");
+                            Cerisier Cer = new Cerisier();
+                            Console.WriteLine("");
+                            Cer.GenerateCerise();
+                            ToDo();
                             break;
-                        case "2":
+
+                        case "2": /*Ramasser Abricots*/
+
                             Console.WriteLine(Prenom + " va ramasser des abricots");
+                            Console.WriteLine("[...]\n");
+                            Abricotier Abr = new Abricotier();
+                            Abr.GenerateAbricot();
+                            Console.WriteLine("");
+                            ToDo();
                             break;
-                        //ToDO == Ajouter le Random Abricot
-                        default:
+
+                        default: /*Erreur*/
                             Console.WriteLine("Une erreur est survenu ..");
                             ToDo();
                             break;
                     }
+                    break;
 
-                    break;
-                case "3": /*Labourer le champs*/
-                    //TODO Add Action.
-                    break;
                 case "0": /*Rentrer chez Soi*/
                     Console.WriteLine(Prenom + " rentre chez lui");
                     SeDeplacer();
                     break;
-                default:
+
+                default: /*Erreur*/
                     Console.WriteLine("Erreur dans la saisie ..");
                     break;
             }
         }
+
+        public override void ToDoInHouse()
+        {
+            Console.WriteLine("Que va faire " + Prenom + " maintenant ?\n");
+            Console.WriteLine("-1- Préparer à manger\n" +
+                              "-2- Mettre en charge Pepper\n" +
+                              "-0- Rentrer chez lui");
+
+            UserChoice = Console.ReadLine();
+
+            switch (UserChoice)
+            {
+                case "1":
+                    Console.WriteLine("Que vas-t'on faire à manger ?");
+                    Console.WriteLine("-1- De la dinde\n" +
+                                      "-2- Une bonne salade de maïs\n" +
+                                      "-0- Rentrer chez lui");
+                    UserChoice = Console.ReadLine();
+                    break;
+                case "2":
+
+                    break;
+                default:
+                    break;
+            }
+        }
+
 
         /// <summary>
         /// Permet à un Homme de créer sa Femme (..ou pas!)
@@ -171,6 +220,7 @@ namespace Tpinfo6
                     break;
                 case "n":
                     Console.WriteLine("Etes-vous sûr ? (o/n)\n");
+                    UserChoice = Console.ReadLine();
 
                     ///<summary>
                     ///Switch-Alt pour Case "n"
@@ -201,6 +251,17 @@ namespace Tpinfo6
             }
         }
 
+        /// <summary>
+        /// Permet à notre héros de dormir
+        /// </summary>
+        public void Dormir()
+        {
+
+        }
+
+        //ToDo == Créer méthode Flemme() 
+
+
         /*──────────────────|
         |   Constructeurs   |
         |──────────────────*/
@@ -212,7 +273,7 @@ namespace Tpinfo6
         {
 
         }
-
+        
 
         public Humain(string Nom, string Prenom) : base()
         {

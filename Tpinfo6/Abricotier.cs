@@ -20,11 +20,11 @@ namespace Tpinfo6
 
             if (abricot < 10)
             {
-                Console.WriteLine("La récolte du cerisier est mauvaise .. Il n'a produit que " + abricot + " abricots cette semaine");
+                Console.WriteLine("La récolte de l'abricotier est mauvaise .. Il n'a produit que " + abricot + " abricots cette semaine");
             }
             else if (abricot > 10 && abricot < 50)
             {
-                Console.WriteLine("La récolte du cerisier est moyenne .. Il n'a produit que " + abricot + " abricots cette semaine..");
+                Console.WriteLine("La récolte de l'abricotier est moyenne .. Il n'a produit que " + abricot + " abricots cette semaine..");
             }
             else if (abricot > 50 && abricot < 80)
             {
@@ -38,5 +38,9 @@ namespace Tpinfo6
             }
         }
 
-    }
+
+
+
+
+    }//End of Class
 }

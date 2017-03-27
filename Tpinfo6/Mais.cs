@@ -8,5 +8,15 @@ namespace Tpinfo6
 {
     public class Mais : Flora
     {
+
+
+
+        /*──────────────────|
+        |   Constructeurs   |
+        |──────────────────*/
+        public void Maïs()
+        {
+
+        }
     }
 }
