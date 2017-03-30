@@ -38,6 +38,7 @@ namespace _Tpinfo6
         {
             base.Mourir();
             Console.WriteLine("{0} est mort(e)! RIP {0}!", Nom);
+            Nom = null;
         }
         public virtual void SeDeplacer(string destination)
         {

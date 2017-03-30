@@ -77,7 +77,8 @@ namespace _Tpinfo6
         }
 
 
-        public static void ActionsQuotidiennes(Soleil soleil, Lune lune, Clone clone, Chien chien, Chevre chevre, Dindon dindon, Humain femme, Humain mari)
+        public static void ActionsQuotidiennes
+            (Soleil soleil, Lune lune, Clone clone, Chien chien, Chevre chevre, Dindon dindon, Humain femme, Humain mari)
         {
             soleil.SeLever();
             dindon.SeRéveiller();

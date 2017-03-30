@@ -13,17 +13,11 @@ namespace _Tpinfo6
 
         }
 
-        public virtual void Vivre()
-        {
-
-        }
-        public virtual void Marcher()
-        {
-
-        }
         public virtual void Mourir()
         {
             
         }
+
+        
     }
 }

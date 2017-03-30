@@ -8,10 +8,6 @@ namespace _Tpinfo6
 {
     class Humain : Animal
     {
-        public override void Marcher()
-        {
-            base.Marcher();
-        }
 
         public override void SeRéveiller()
         {

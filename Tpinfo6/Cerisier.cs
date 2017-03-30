@@ -8,5 +8,14 @@ namespace _Tpinfo6
 {
     class Cerisier : Végétal
     {
+        public override void Pousser()
+        {
+            base.Pousser();
+        }
+
+        public override void Mourir()
+        {
+            base.Mourir();
+        }
     }
 }

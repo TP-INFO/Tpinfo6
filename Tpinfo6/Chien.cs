@@ -20,14 +20,7 @@ namespace _Tpinfo6
         {
             base.Manger();
         }
-        public override void Marcher()
-        {
-            base.Marcher();
-        }
-        public override void Vivre()
-        {
-            base.Vivre();
-        }
+
         public override void Mourir()
         {
             base.Mourir();
