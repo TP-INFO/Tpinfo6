@@ -1,4 +1,4 @@
-﻿namespace _2017_03_22_TP6
+﻿namespace _Tpinfo6
 {
 
     enum Jours

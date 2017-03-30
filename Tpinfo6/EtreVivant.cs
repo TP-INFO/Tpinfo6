@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _2017_03_22_TP6
+namespace _Tpinfo6
 {
     public abstract class EtreVivant
     {

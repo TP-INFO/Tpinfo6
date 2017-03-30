@@ -4,10 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _2017_03_22_TP6
+namespace _Tpinfo6
 {
-    struct Clone
+    struct Clone : ISeDeplacer
     {
+        public string Nom { get; set; }
 
+        public Clone(string nom)
+        {
+            Nom = nom;
+        }
+        public void SeDeplacer(string destination)
+        {
+            Console.WriteLine("{0} se déplace vers {1}", Nom, destination);
+        }
     }
 }
