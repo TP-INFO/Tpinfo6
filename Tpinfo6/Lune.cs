@@ -6,13 +6,20 @@ using System.Threading.Tasks;
 
 namespace _Tpinfo6
 {
+    /// <summary>
+    /// Classe publique, fille de Astre
+    /// </summary>
     public class Lune : Astre
     {
+        //Constructeur vide
         public Lune()
         {
             
         }
 
+        /// <summary>
+        /// Override des méthodes de Astre
+        /// </summary>
         public override void SeLever()
         {
             Console.WriteLine("La lune se lève");

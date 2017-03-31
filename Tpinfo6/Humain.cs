@@ -6,9 +6,14 @@ using System.Threading.Tasks;
 
 namespace _Tpinfo6
 {
-    class Humain : Animal
+    /// <summary>
+    /// CLasse publique, fille de animal
+    /// </summary>
+    public class Humain : Animal
     {
-
+        /// <summary>
+        /// Override des méthodes de etrevivant et animal : seréveiller, sendormir, manger et mourir
+        /// </summary>
         public override void SeRéveiller()
         {
             base.SeRéveiller();
@@ -20,6 +25,10 @@ namespace _Tpinfo6
         public override void Manger()
         {
             base.Manger();
+        }
+        public override void Mourir()
+        {
+            base.Mourir();
         }
     }
 }

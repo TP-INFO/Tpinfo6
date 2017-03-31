@@ -6,22 +6,20 @@ using System.Threading.Tasks;
 
 namespace _Tpinfo6
 {
+    /// <summary>
+    /// Classe publique, fille de Astre
+    /// </summary>
     public class Soleil : Astre
     {
-        
+        //Constructeur vide
         public Soleil()
         {
            
         }
 
-        public void PremierLever(DateTime dtHPremierLever)
-        {
-            Console.WriteLine("Une nouvelle semaine commence à la ferme 'Farm 3000': le soleil se lève, nous sommes le {0}", dtHPremierLever);
-        }
-        public void DernierCoucher(DateTime dtHDernierCoucher)
-        {
-            Console.WriteLine("Encore une semaine qui se termine à la ferme 'Farm 3000': le soleil se couche, nous sommes le {0}", dtHDernierCoucher);
-        }
+        /// <summary>
+        /// Override des méthodes de Astre
+        /// </summary>
         public override void SeLever()
         {
             Console.WriteLine("Le soleil se lève"); 

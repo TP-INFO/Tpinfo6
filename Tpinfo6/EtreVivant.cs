@@ -6,18 +6,20 @@ using System.Threading.Tasks;
 
 namespace _Tpinfo6
 {
+    /// <summary>
+    /// Classe mère publique et abstraite 
+    /// </summary>
     public abstract class EtreVivant
     {
+        //Constructeur vide
         public EtreVivant()
         {
 
         }
-
+        //Méthode virtuelle mourir
         public virtual void Mourir()
         {
             
         }
-
-        
     }
 }

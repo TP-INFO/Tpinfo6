@@ -6,32 +6,37 @@ using System.Threading.Tasks;
 
 namespace _Tpinfo6
 {
+    /// <summary>
+    /// Classe mère et fille, publique et abstraite
+    /// </summary>
     public abstract class Végétal : EtreVivant
     {
-        protected string _type;
+        //Déclaration en protected du type de végétal
+        protected string _typeVeg;
 
-        public string Type
+        //Accesseur du type
+        public string TypeVeg
         {
             get
             {
-                return this._type;
+                return this._typeVeg;
             }
             set
             {
-                this._type = value;
+                this._typeVeg = value;
             }
         }
-
+        //Méthode indiquant que le végétal pousse
         public virtual void Pousser()
         {
-            Console.WriteLine("{0} profite de la lumière du soleil pour pousser...", Type);
+            Console.WriteLine("{0} profite de la lumière du soleil pour pousser...", TypeVeg);
         }
-
+        //Override de la méthode mourir
         public override void Mourir()
         {
             base.Mourir();
-            Console.WriteLine($"Le {Type} est mort");
-            Type = null;
+            Console.WriteLine($"Le {TypeVeg} est mort");
+            TypeVeg = null;
         }
     }
 }

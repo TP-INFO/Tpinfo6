@@ -6,43 +6,22 @@ using System.Threading.Tasks;
 
 namespace _Tpinfo6
 {
+    /// <summary>
+    /// Classe-mère abstraite Astre
+    /// </summary>
+    
     public abstract class Astre
     {
-        protected DateTime _dtHLever;
-        protected DateTime _dtHCoucher;
-
-        public DateTime DTHLever
-        {
-            get
-            {
-                return this._dtHLever;
-            }
-            set
-            {
-                this._dtHLever = value;
-            }
-        }
-
-
-        public DateTime DTHCoucher
-        {
-            get
-            {
-                return this._dtHCoucher;
-            }
-            set
-            {
-                this._dtHCoucher = value;
-            }
-        }
-
+        //Constructeur vide
         public Astre()
         {
 
         }
 
-        abstract public void SeLever();        
+        //Méthode abstraite pour indiquer que l'astre se lève
+        abstract public void SeLever();
 
+        //Méthode abstraite pour indiquer que l'astre se couche
         abstract public void SeCoucher();
 
     }
