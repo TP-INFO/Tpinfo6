@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Tpinfo6
 {
-    public class Humanoide : NewHumanity
+    public class Humanoide : NewHumanity 
     {
         /*──────────────────|
         |     Attributs     |
@@ -24,7 +24,16 @@ namespace Tpinfo6
         |      Méthodes     |
         |──────────────────*/
 
-        
+        public override void Mourrir()
+        {
+            base.Mourrir();
+        }
+
+        public override void SeDeplacer()
+        {
+            base.SeDeplacer();
+        }
+
 
         /*──────────────────|
         |   Constructeurs   |

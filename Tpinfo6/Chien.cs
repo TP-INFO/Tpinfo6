@@ -37,8 +37,9 @@ namespace Tpinfo6
         /// </summary>
         public void RemuerLaQueue()
         {
-            Console.WriteLine("\n" + Nom + " semble être heureux d'être avec vous !\n" +
-                              Nom + " remue la queue ..");
+            Console.WriteLine("\n\t" + Nom + " semble être heureux d'être avec vous !\n" +
+                             "\t" + Nom + " remue la queue ..");
+            System.Threading.Thread.Sleep(1000);
         }
 
         /// <summary>

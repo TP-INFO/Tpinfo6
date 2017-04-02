@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Tpinfo6
 {
-    public abstract class Animal
+    public abstract class Animal : IMammifere
     {
         /*──────────────────|
         |      Méthodes     |
@@ -23,6 +23,11 @@ namespace Tpinfo6
         }
 
         public void Mourrir()
+        {
+
+        }
+
+        public void RentrerChezSoi()
         {
 
         }

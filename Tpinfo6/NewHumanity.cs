@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Tpinfo6
 {
-    public abstract class NewHumanity
+    public abstract class NewHumanity : IMammifere
     {
         /*──────────────────|
         |     Attributs     |
@@ -38,29 +38,14 @@ namespace Tpinfo6
         |      Méthodes     |
         |──────────────────*/
 
-        /// <summary>
-        /// Méthode permettant de créer une histoire personnalisée 
-        /// ....
-        /// </summary>
-        //public virtual void ToBegin() //ToDo Utilité ?
-        //{
-        //    Console.Write("╔═══════════════════════════════════════╗\n" +
-        //                  "║                                       ║\n" +
-        //                  "║                                       ║\n" +
-        //                  "║         Welcome in Futur Farm         ║\n" +
-        //                  "║                                       ║\n" +
-        //                  "║                                       ║\n" +
-        //                  "╚═══════════════════════════════════════╝\n");
-        //}
-
         public virtual void RentrerChezSoi()
         {
 
         }
 
-        public virtual void SeDeplacer() //Voir si ces méthodes ne peuvent pas être coupler avec : Animal
+        public virtual void SeDeplacer()
         {
-            
+
         }
 
         public virtual void Manger()
@@ -77,7 +62,7 @@ namespace Tpinfo6
         {
 
         }
-        
+
         public virtual void Mourrir()
         {
 

@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace Tpinfo6
 {
-    public class Humain : NewHumanity
+    public class Humain : NewHumanity, IMammifere
     {
-        //private string userChoice; Implémenter dans classe mère ..
-
         /*──────────────────|
         |      Méthodes     |
         |──────────────────*/
@@ -34,7 +32,8 @@ namespace Tpinfo6
             Console.WriteLine("\nOù voulez-vous que " + Prenom + " se déplaçe ?\n");
             Console.WriteLine("-1- Sur son champs\n" +
                               "-2- Dans sa maison\n" +
-                              "-0- Rentrer chez soi\n");
+                              "-0- Dormir\n" +
+                              "-5- Quitter le jeu");
             UserChoice = Console.ReadLine();
 
             switch (UserChoice)
@@ -57,6 +56,11 @@ namespace Tpinfo6
 
                     //TODO Add Action.
                     break;
+                case "5": //Quitter
+                    Console.Clear();
+                    Console.WriteLine("A bientôt !");
+                    Environment.Exit(0);
+                    break;
                 default:
                     Console.WriteLine("Erreur dans la saisie ..");
                     SeDeplacer();
@@ -75,7 +79,8 @@ namespace Tpinfo6
             Console.WriteLine("Que va faire " + Prenom + " maintenant ?\n");
             Console.WriteLine("-1- Tailler ses arbres\n" +
                               "-2- Ramasser des fruits\n" +
-                              "-0- Rentrer chez lui");
+                              "-0- Rentrer chez lui\n" +
+                              "-5- Quitter le jeu");
 
             UserChoice = Console.ReadLine();
 
@@ -88,13 +93,12 @@ namespace Tpinfo6
 
                     Console.WriteLine("-1- Tailler le cerisier\n" +
                                       "-2- Tailler l'abricotier\n" +
-                                      "-0- Rentrer chez lui");
+                                      "-0- Rentrer chez lui\n" +
+                                      "-5- Quitter le jeu");
 
                     UserChoice = Console.ReadLine();
 
-                    ///<summary>
-                    ///Switch-Alt pour Case 1 -Tailler-
-                    /// </summary>
+                    #region Switch-Alt (Case1 -Tailler)
                     switch (UserChoice)
                     {
                         case "1": /*Taille Cerisier*/ //ToDo == Ajouter Pepper qui ramasse un nombre de branches
@@ -113,12 +117,18 @@ namespace Tpinfo6
                             SeDeplacer(); //Remplaçer par RentrerChezSoi()
                             break;
 
+                        case "5": /*Quitter*/
+                            Console.Clear();
+                            Console.WriteLine("A bientôt !");
+                            Environment.Exit(0);
+                            break;
+
                         default:
                             Console.WriteLine("Une erreur est survenu ..");
                             ToDo();
                             break;
                     }
-
+                    #endregion
                     break;
 
                 case "2": /*Ramasser les fruits*/
@@ -132,9 +142,7 @@ namespace Tpinfo6
 
                     UserChoice = Console.ReadLine();
 
-                    ///<summary>
-                    ///Switch-Alt pour Case 2 -Ramasser-
-                    /// </summary>
+                    #region Switch-Alt (Case2 -Ramasser)
                     switch (UserChoice)
                     {
                         case "1": /*Ramasser Cerises*/
@@ -162,11 +170,18 @@ namespace Tpinfo6
                             ToDo();
                             break;
                     }
+                    #endregion
                     break;
 
                 case "0": /*Rentrer chez Soi*/
                     Console.WriteLine(Prenom + " rentre chez lui");
                     SeDeplacer();
+                    break;
+
+                case "5": /*Quitter*/
+                    Console.Clear();
+                    Console.WriteLine("A bientôt !");
+                    Environment.Exit(0);
                     break;
 
                 default: /*Erreur*/
@@ -175,6 +190,9 @@ namespace Tpinfo6
             }
         }
 
+        /// <summary>
+        /// Méthode permettant d'éffectuer des tâches à la maison
+        /// </summary>
         public override void ToDoInHouse()
         {
             Console.WriteLine("Que va faire " + Prenom + " maintenant ?\n");
@@ -190,17 +208,24 @@ namespace Tpinfo6
                     Console.WriteLine("Que vas-t'on faire à manger ?");
                     Console.WriteLine("-1- De la dinde\n" +
                                       "-2- Une bonne salade de maïs\n" +
-                                      "-0- Rentrer chez lui");
+                                      "-5- Quitter");
                     UserChoice = Console.ReadLine();
                     break;
+
                 case "2":
 
                     break;
+
+                case "5":
+                    Console.Clear();
+                    Console.WriteLine("A bientôt !");
+                    Environment.Exit(0);
+                    break;
+
                 default:
                     break;
             }
         }
-
 
         /// <summary>
         /// Permet à un Homme de créer sa Femme (..ou pas!)
@@ -212,41 +237,44 @@ namespace Tpinfo6
             switch (UserChoice)
             {
                 case "o":
-                    Console.WriteLine("Quel sera le prénom de sa compagne ?\n");
+                    Console.WriteLine("Quel sera le prénom de sa compagne ?");
                     Humain Femme = new Humain();
                     Femme.Prenom = Console.ReadLine();
                     Console.WriteLine("\nExcellent choix,\n" +
                                        Femme.Prenom + " est un très beau prénom !");
                     break;
                 case "n":
-                    Console.WriteLine("Etes-vous sûr ? (o/n)\n");
+                    Console.Write("Etes-vous sûr ? (o/n) ");
                     UserChoice = Console.ReadLine();
 
-                    ///<summary>
-                    ///Switch-Alt pour Case "n"
-                    /// </summary>
+                    #region Switch-Alt Rep = "n"
                     switch (UserChoice)
                     {
                         case "o":
-                            Console.WriteLine("\nJe vois que vous êtes revenu à la raison,\n" +
-                                              " Quelle sera donc son prénom ?");
+                            Console.WriteLine("\n\tNe venez pas vous plaindre d'avoir trop de travail !");
+                            break;
+
+                        case "n":
+                            Console.WriteLine("\n\tJe vois que vous êtes revenu à la raison,\n" +
+                                              "\tQuelle sera donc son prénom ?");
                             Femme = new Humain();
                             Femme.Prenom = Console.ReadLine();
-                            Console.WriteLine("\nExcellent choix,\n" +
-                                               Femme.Prenom + " est un très beau prénom !");
+                            Console.WriteLine("\n\tExcellent choix,\n" +
+                                              "\t" + Femme.Prenom + " est un très beau prénom !");
                             break;
-                        case "n":
-                            Console.WriteLine("Ne venez pas vous plaindre d'avoir trop de travail !");
-                            break;
+
                         default:
                             Console.WriteLine("Erreur de saisie, veuillez recommencer ..");
+                            Console.Clear();
                             CreateWife();
                             break;
                     }
+                    #endregion
                     break;
                 default:
                     Console.WriteLine("Erreur de saisie, veuillez recommencer ..");
                     CreateWife();
+                    Console.Clear();
                     break;
             }
         }
@@ -255,6 +283,16 @@ namespace Tpinfo6
         /// Permet à notre héros de dormir
         /// </summary>
         public void Dormir()
+        {
+
+        }
+
+        public override void Manger()
+        {
+
+        }
+
+        public override void Mourrir()
         {
 
         }
