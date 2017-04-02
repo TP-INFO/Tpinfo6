@@ -8,8 +8,6 @@ namespace Tpinfo6
 {
     public class Abricotier : Flora
     {
-        //ToDo == Personnaliser les quantités et messages
-
         /// <summary>
         /// Génére un nombre aléatoires de cerises sur l'arbre
         /// </summary>
@@ -38,9 +36,26 @@ namespace Tpinfo6
             }
         }
 
-
-
-
+        /// <summary>
+        /// Castastrophe aléatoire entraînant la mort des abricotiers
+        /// </summary>
+        public override void Mourrir()
+        {
+            Random random = new Random();
+            int cataclysm = random.Next(0, 2);
+            if (cataclysm == 0)
+            {
+                Console.WriteLine("\n\tOh non ! Les abricotiers ont tous brûlés ! ¯\\_(O_O)_/¯");
+            }
+            else if (cataclysm == 1)
+            {
+                Console.WriteLine("\n\tOh non ! Quelqu'un a délibérement tronçonnés les abricotiers ! (>.<)");
+            }
+            else
+            {
+                Console.WriteLine("\n\tOh non ! Les abricotiers ont été dévastés par une météorite !");
+            }
+        }
 
     }//End of Class
 }

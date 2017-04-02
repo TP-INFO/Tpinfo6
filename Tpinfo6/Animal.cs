@@ -8,6 +8,14 @@ namespace Tpinfo6
 {
     public abstract class Animal : IMammifere
     {
+        private string _nom;
+
+        public string Nom
+        {
+            get { return this._nom; }
+            set { _nom = value; }
+        }
+
         /*──────────────────|
         |      Méthodes     |
         |──────────────────*/
@@ -22,7 +30,7 @@ namespace Tpinfo6
 
         }
 
-        public void Mourrir()
+        public virtual void Mourrir()
         {
 
         }

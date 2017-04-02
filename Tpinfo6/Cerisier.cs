@@ -42,12 +42,27 @@ namespace Tpinfo6
         }
 
         /// <summary>
-        /// Fais mourrir un Cerisier
+        /// Catastrophe aléatoire faisant mourrir un Cerisier
         /// </summary>
-        public void Mourrir()
+        public override void Mourrir()
         {
-            //ToDo == Faire mourrir selon un jour précis
+            Random random = new Random();
+            int cataclysm = random.Next(0, 2);
+
+            if (cataclysm == 0)
+            {
+                Console.WriteLine("\n\tOh non ! Tous les cerisiers ont été mangés par des sauterelles ! o_0 ");
+            }
+            else if (cataclysm == 1)
+            {
+                Console.WriteLine("\n\tOh non ! Tous les cerisiers ont moisis sur place ! O_O");
+            }
+            else
+            {
+                Console.WriteLine("\n\tOh non ! Les cerisiers ont été arrachés !");
+            }
         }
+
 
     }
 }

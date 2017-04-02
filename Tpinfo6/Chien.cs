@@ -12,13 +12,6 @@ namespace Tpinfo6
         |     Attributs     |
         |──────────────────*/
 
-        private string _nom;
-
-        public string Nom
-        {
-            get { return this._nom; }
-            set { _nom = value; }
-        }
 
         /*──────────────────|
         |      Méthodes     |
@@ -29,7 +22,7 @@ namespace Tpinfo6
         /// </summary>
         public void Aboyer()
         {
-            Console.WriteLine("Wouaf ! Woof !");
+            Console.WriteLine("\n\tWouaf ! Woof !");
         }
 
         /// <summary>
@@ -43,11 +36,21 @@ namespace Tpinfo6
         }
 
         /// <summary>
-        /// Permet à un chien de se lancer à la poursuite.
+        /// Permet à un chien de se lancer à la poursuite d'un autre animal !
         /// </summary>
-        public void Poursuivre()
+        public void Poursuivre(Chien chien, Animal animal)
         {
+            chien.Aboyer();
+            Console.WriteLine("\n\t{0} court après {1}, attention aux dégats !", chien.Nom, animal.Nom);
+        }
 
+        /// <summary>
+        /// Méthode faisant mourrir un chien ..
+        /// </summary>
+        public override void Mourrir()
+        {
+            Console.WriteLine("Votre chien, {0} est mort !!", Nom);
+            Nom = null;
         }
 
         /*──────────────────|

@@ -294,7 +294,7 @@ namespace Tpinfo6
 
         public override void Mourrir()
         {
-
+           
         }
 
         //ToDo == Créer méthode Flemme() 

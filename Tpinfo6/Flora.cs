@@ -20,33 +20,33 @@ namespace Tpinfo6
         /// </summary>
         public void Pousser()
         {
-            Console.WriteLine("Encore un peu de patience .." +
-                              "[...]");
+            Console.WriteLine("\n\tHey ! La pousse reprend à peine !" +
+                              "\n\tEncore un peu de patience .." +
+                              "\t[...]");
         }
 
         /// <summary>
         /// Méthode qui fait fleurir les fruits et légumes !
         /// </summary>
-        public void Fleurir()
+        public virtual void Fleurir()
         {
-            Console.WriteLine("C'est le moment de la floraison .." +
-                              "[...]" +
-                              "Bientôt la récolte");
-
+            Console.WriteLine("\tC'est le moment de la floraison ..\n" +
+                              "\t[...]\n" +
+                              "\tBientôt la récolte");
         }
 
         /// <summary>
         /// Méthode indiquant l'arrivé à maturité des fruits et légumes, Miam !
         /// </summary>
-        public void Recolter()
+        public virtual void Recolter()
         {
-            Console.WriteLine("Les "/*Fruits et Legumes*/ + " sont prêt a être récoltés ! "); //Permettre la personnalisation selon fruit et légumes ..
+            Console.WriteLine("C'est le jour de la récolte ! ");
         }
 
         /// <summary>
         /// Méthode qui fait mourrir les arbres et plantes ..
         /// </summary>
-        public void Mourrir()
+        public virtual void Mourrir()
         {
 
 

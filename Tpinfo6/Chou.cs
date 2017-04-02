@@ -39,5 +39,29 @@ namespace Tpinfo6
                                   "Une récolte exceptionnel de" + chou + " choux s'offre à vous, bonne régalade !");
             }
         }
+
+        /// <summary>
+        /// Castastrophe aléatoire faisant mourrir les choux
+        /// </summary>
+        public override void Mourrir()
+        {
+            Random random = new Random();
+            int cataclysm = random.Next(0, 2);
+            if (cataclysm == 0)
+            {
+                Console.WriteLine("\n\tOh non ! Les choux ont été dévorés par des Lapins !");
+                Console.Write(" (\\-/)\n" +
+                              "(='.'=)\n" +
+                              "(o)-(o)");
+            }
+            else if (cataclysm == 1)
+            {
+                Console.WriteLine("\n\tOh non ! Vous avez oublié d'arroser les choux, ils sont tous carbonisés ! (>.<)");
+            }
+            else
+            {
+                Console.WriteLine("\n\tOh non ! Les choux ont été dévastés par une météorite !");
+            }
+        }
     }
 }
