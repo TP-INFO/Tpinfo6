@@ -50,9 +50,9 @@ namespace Tpinfo6
             if (cataclysm == 0)
             {
                 Console.WriteLine("\n\tOh non ! Les choux ont été dévorés par des Lapins !");
-                Console.Write(" (\\-/)\n" +
-                              "(='.'=)\n" +
-                              "(o)-(o)");
+                Console.Write("\t (\\-/)\n" +
+                              "\t(='.'=)\n" +
+                              "\t(o)-(o)");
             }
             else if (cataclysm == 1)
             {

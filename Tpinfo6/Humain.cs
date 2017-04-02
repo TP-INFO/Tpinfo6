@@ -287,11 +287,17 @@ namespace Tpinfo6
 
         }
 
+        /// <summary>
+        /// Permet à notre héros de manger
+        /// </summary>
         public override void Manger()
         {
 
         }
 
+        /// <summary>
+        /// Permet à un Humain de Mourrir()
+        /// </summary>
         public override void Mourrir()
         {
            
@@ -311,7 +317,6 @@ namespace Tpinfo6
         {
 
         }
-        
 
         public Humain(string Nom, string Prenom) : base()
         {

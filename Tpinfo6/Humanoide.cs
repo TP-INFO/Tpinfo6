@@ -9,18 +9,6 @@ namespace Tpinfo6
     public class Humanoide : NewHumanity 
     {
         /*──────────────────|
-        |     Attributs     |
-        |──────────────────*/
-
-        private string _nom;
-
-        public new string Nom
-        {
-            get { return this._nom; }
-            set { _nom = value; }
-        }
-
-        /*──────────────────|
         |      Méthodes     |
         |──────────────────*/
 

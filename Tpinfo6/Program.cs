@@ -8,7 +8,7 @@ namespace Tpinfo6
 {
     class Program
     {
-        const double Version = 0.4; 
+        const double Version = 0.6; 
 
         static void Main(string[] args)
         {
@@ -25,20 +25,22 @@ namespace Tpinfo6
             Soleil Sun = new Soleil();
             Sun.SeLever();
 
-            //Console.Write("Quel est le prénom de votre héros ? ");
-            //Humain Homme = new Humain();
-            //Homme.Prenom = Console.ReadLine();
+            Console.Write("Quel est le prénom de votre héros ? ");
+            Humain Homme = new Humain();
+            Homme.Prenom = Console.ReadLine();
 
-            //Console.Write("\n" + Homme.Prenom + " est-il accompagné dans la vie ? (o/n) : ");
-            //Homme.CreateWife();
+            Console.Write("\n" + Homme.Prenom + " est-il accompagné dans la vie ? (o/n) : ");
+            Homme.CreateWife();
 
-            //Humanoide Pepper = new Humanoide("Pepper");
-            //Console.WriteLine("\n\tVotre humanoïde s'appelle " + Pepper.Nom + "\n" +
-            //                  "\tIl effectuera les tâches les plus ingrates pour vous, c'est un alliés précieux.");
+            Humanoide Pepper = new Humanoide("Pepper");
+            Console.WriteLine("\n\tVotre humanoïde s'appelle " + Pepper.Nom + "\n" +
+                              "\tIl effectuera les tâches les plus ingrates pour vous, c'est un alliés précieux.");
 
-            //System.Threading.Thread.Sleep(2000);
+            System.Threading.Thread.Sleep(2000);
 
-            /*Structure de Tests*/
+            Homme.SeDeplacer();
+
+            #region Structure de Tests
 
             Chevre Che = new Chevre();
             Che.Nom = "Biquette";
@@ -50,46 +52,68 @@ namespace Tpinfo6
             Dog.RemuerLaQueue();
 
             Dog.Poursuivre(Dog, Che);
+            Dog.Manger();
             Dog.Mourrir();
 
+            Mais Mai = new Mais();
+            Mai.Variete = "Maïs";
+            Mai.Pousser();
+            Mai.Fleurir();
+            Mai.Recolter();
+            Mai.Mourrir();
+
+            Chou Cho = new Chou();
+            Cho.Variete = "Chou";
+            Cho.Pousser();
+            Cho.Fleurir();
+            Cho.Recolter();
+            Cho.Mourrir();
+
             Cerisier Cer = new Cerisier();
+            Cer.Variete = "Cerisier";
             Cer.Pousser();
             Cer.Fleurir();
             Cer.Recolter();
             Cer.Mourrir();
 
-            //Abricotier Abr = new Abricotier();
-            //Abr.Pousser();
-            //Abr.Fleurir();
-            //Abr.Recolter();
-            //Abr.Mourrir();
+            Abricotier Abr = new Abricotier();
+            Cer.Variete = "Abricotier";
+            Abr.Pousser();
+            Abr.Fleurir();
+            Abr.Recolter();
+            Abr.Mourrir();
 
-            //Homme.SeDeplacer();
+            Dindon Din = new Dindon();
+            Din.Nom = "Glou";
+            Din.Glouglouter();
+            Din.Manger();
+            Din.Mourrir();
 
+            #endregion
 
-
-
-            /*ToDo == Général :
+            #region ToDo :
+            /*        Général :
                       Mettre header "Welcome in" persistant
                       Afficher résumé des précedentes saisies (Homme, Femme, Chien) avant démarrage de l'histoire
                       Présenter le Contexte et mettre en place la semaine
 
                       Actions :
                       Définir des méthodes d'actions pour les Clones, Androides, Humanoides
-                      Définir les méthodes d'actions pour les animaux
-                      Mettre en place une struct pour Clone -*- 
+                      Terminer Manger() et Mourrir() pour Humains, Humanïdes, Androïdes
+                      -DONE- Définir les méthodes d'actions pour les animaux 
+                      -DONE- Mettre en place une struct pour Clone
 
                       Flora :
                       Définir pour chaques jour des changements d'états dans les arbres et plantes
                       Empêcher récolte selon les jours
-                      Méthode aléatoire pour faire mourrir ou non les arbres/plantes
+                      -DONE- Méthode aléatoire pour faire mourrir ou non les arbres/plantes
 
                       Humain :
                       Mettre en place fonction Flemme() == Permet de sauter des jours de la semaine
                       Mettre en place fonction ActionMax() == Terminé la journée "J'en ai marre" + RentrerChezSoi()
 
             */
-
+            #endregion
 
         }//End of Main
     }

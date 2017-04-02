@@ -25,14 +25,21 @@ namespace Tpinfo6
 
         }
 
+        /// <summary>
+        /// Fais manger un Animal
+        /// </summary>
         public void Manger()
         {
-
+            Console.WriteLine("\n\tVotre {0} se régale : Chomp, Chomp !", Nom);
         }
 
+        /// <summary>
+        /// Méthode faisant mourrir un animal
+        /// </summary>
+        /// <param>Nom</param>
         public virtual void Mourrir()
         {
-
+            Console.WriteLine("\n\tVotre {0} est mort, paix à son âme !", Nom);
         }
 
         public void RentrerChezSoi()

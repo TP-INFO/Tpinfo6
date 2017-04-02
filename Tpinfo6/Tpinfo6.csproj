@@ -57,7 +57,7 @@
     <Compile Include="Flora.cs" />
     <Compile Include="Humain.cs" />
     <Compile Include="Humanoide.cs" />
-    <Compile Include="Imammifere.cs" />
+    <Compile Include="IMammifere.cs" />
     <Compile Include="Lune.cs" />
     <Compile Include="Mais.cs" />
     <Compile Include="NewHumanity.cs" />

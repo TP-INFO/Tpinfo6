@@ -14,7 +14,6 @@ namespace Tpinfo6
         private string _userChoice;
         private string _nom;
         private string _prenom;
-        private int _age;
 
         public string UserChoice
         {

@@ -37,6 +37,17 @@ namespace Tpinfo6
         }
 
         /// <summary>
+        /// Méthode qui fait pousser l'abricotier
+        /// </summary>
+        /// <remarks>Nuance avec "l'" du au nom de l'abricotier</remarks>
+        public override void Pousser()
+        {
+            Console.WriteLine("\n\tHey ! La pousse reprend à peine pour l'abricotier !" +
+                             "\n\tEncore un peu de patience .. " +
+                             "\t[...]");
+        }
+
+        /// <summary>
         /// Castastrophe aléatoire entraînant la mort des abricotiers
         /// </summary>
         public override void Mourrir()
