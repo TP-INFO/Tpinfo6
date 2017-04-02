@@ -23,21 +23,21 @@ namespace Tpinfo6
 
             if (cerise < 10)
             {
-                Console.WriteLine("La récolte du cerisier est mauvaise .. Il n'a produit que " + cerise + " cerises cette semaine");
+                Console.WriteLine("La récolte du cerisier est mauvaise .. Il n'a produit que {0} cerises cette semaine", cerise);
             }
             else if (cerise > 10 && cerise < 50)
             {
-                Console.WriteLine("La récolte du cerisier est moyenne .. Il n'a produit que " + cerise + " cerises cette semaine..");
+                Console.WriteLine("La récolte du cerisier est moyenne .. Il n'a produit que {0} cerises cette semaine..", cerise);
             }
             else if (cerise > 50 && cerise < 80)
             {
-                Console.WriteLine("C'est une bonne récolte ! Vous allez pouvoir récolter " + cerise + " cerises cette semaine !\n" +
-                                  "A vos fourneaux !");
+                Console.WriteLine("C'est une bonne récolte ! Vous allez pouvoir récolter {0} cerises cette semaine !\n" +
+                                  "A vos fourneaux !", cerise);
             }
             else
             {
                 Console.WriteLine("Quel chance !\n"+
-                                  "Une récolte exceptionnel de " + cerise+ " cerises s'offre à vous, bonne régalade !");
+                                  "Une récolte exceptionnel de {0} cerises s'offre à vous, bonne régalade !", cerise);
             }
         }
 

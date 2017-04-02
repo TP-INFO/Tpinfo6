@@ -18,20 +18,20 @@ namespace Tpinfo6
 
             if (mais < 200)
             {
-                Console.WriteLine("Etes vous sûr d'être un fermier ? .. Votre champ n'a produit que " + mais + " maïs cette semaine..");
+                Console.WriteLine("Etes vous sûr d'être un fermier ? .. Votre champ n'a produit que {0} maïs cette semaine..", mais);
             }
             else if (mais > 200 && mais < 500)
             {
-                Console.WriteLine("Votre technique n'est certainement pas bonne .. Le champ n'a produit que " + mais + " maïs cette semaine..");
+                Console.WriteLine("Votre technique n'est certainement pas bonne .. Le champ n'a produit que {0} maïs cette semaine..", mais);
             }
             else if (mais > 500 && mais < 700)
             {
-                Console.WriteLine("C'est une bonne récolte que vous avez là ! Vous allez pouvoir récolter " + mais + " maïs cette semaine !"); 
+                Console.WriteLine("C'est une bonne récolte que vous avez là ! Vous allez pouvoir récolter {0} maïs cette semaine !", mais); 
             }
             else
             {
                 Console.WriteLine("Quel chance !\n" +
-                                  "Une récolte exceptionnel de" + mais + " maïs s'offre à vous, bonne régalade !");
+                                  "Une récolte exceptionnel de {0} maïs s'offre à vous, bonne régalade !", mais);
             }
         }
 

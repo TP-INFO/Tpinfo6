@@ -9,11 +9,6 @@ namespace Tpinfo6
     public class Chien : Animal
     {
         /*──────────────────|
-        |     Attributs     |
-        |──────────────────*/
-
-
-        /*──────────────────|
         |      Méthodes     |
         |──────────────────*/
 
@@ -49,7 +44,7 @@ namespace Tpinfo6
         /// </summary>
         public override void Mourrir()
         {
-            Console.WriteLine("Votre chien, {0} est mort !!", Nom);
+            Console.WriteLine("\n\tVotre chien, {0} est mort !!", Nom);
             Nom = null;
         }
 

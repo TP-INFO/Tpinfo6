@@ -21,7 +21,7 @@ namespace Tpinfo6
         public void Pousser()
         {
             Console.WriteLine("\n\tHey ! La pousse reprend à peine !" +
-                              "\n\tEncore un peu de patience .." +
+                              "\n\tEncore un peu de patience .. " +
                               "\t[...]");
         }
 
@@ -30,8 +30,7 @@ namespace Tpinfo6
         /// </summary>
         public virtual void Fleurir()
         {
-            Console.WriteLine("\tC'est le moment de la floraison ..\n" +
-                              "\t[...]\n" +
+            Console.WriteLine("\n\tC'est le moment de la floraison ..    [...]\n" +
                               "\tBientôt la récolte");
         }
 
@@ -40,7 +39,7 @@ namespace Tpinfo6
         /// </summary>
         public virtual void Recolter()
         {
-            Console.WriteLine("C'est le jour de la récolte ! ");
+            Console.WriteLine("\n\tC'est le jour de la récolte ! ");
         }
 
         /// <summary>

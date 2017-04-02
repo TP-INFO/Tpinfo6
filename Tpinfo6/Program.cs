@@ -25,18 +25,18 @@ namespace Tpinfo6
             Soleil Sun = new Soleil();
             Sun.SeLever();
 
-            Console.Write("Quel est le prénom de votre héros ? ");
-            Humain Homme = new Humain();
-            Homme.Prenom = Console.ReadLine();
+            //Console.Write("Quel est le prénom de votre héros ? ");
+            //Humain Homme = new Humain();
+            //Homme.Prenom = Console.ReadLine();
 
-            Console.Write("\n" + Homme.Prenom + " est-il accompagné dans la vie ? (o/n) : ");
-            Homme.CreateWife();
+            //Console.Write("\n" + Homme.Prenom + " est-il accompagné dans la vie ? (o/n) : ");
+            //Homme.CreateWife();
 
-            Humanoide Pepper = new Humanoide("Pepper");
-            Console.WriteLine("\n\tVotre humanoïde s'appelle " + Pepper.Nom + "\n" +
-                              "\tIl effectuera les tâches les plus ingrates pour vous, c'est un alliés précieux.");
+            //Humanoide Pepper = new Humanoide("Pepper");
+            //Console.WriteLine("\n\tVotre humanoïde s'appelle " + Pepper.Nom + "\n" +
+            //                  "\tIl effectuera les tâches les plus ingrates pour vous, c'est un alliés précieux.");
 
-            System.Threading.Thread.Sleep(2000);
+            //System.Threading.Thread.Sleep(2000);
 
             /*Structure de Tests*/
 
@@ -52,12 +52,16 @@ namespace Tpinfo6
             Dog.Poursuivre(Dog, Che);
             Dog.Mourrir();
 
-            //Cerisier Cer = new Cerisier();
-            //Cer.Pousser();
-            //Cer.Fleurir();
+            Cerisier Cer = new Cerisier();
+            Cer.Pousser();
+            Cer.Fleurir();
+            Cer.Recolter();
+            Cer.Mourrir();
 
             //Abricotier Abr = new Abricotier();
             //Abr.Pousser();
+            //Abr.Fleurir();
+            //Abr.Recolter();
             //Abr.Mourrir();
 
             //Homme.SeDeplacer();

@@ -18,21 +18,21 @@ namespace Tpinfo6
 
             if (abricot < 10)
             {
-                Console.WriteLine("La récolte de l'abricotier est mauvaise .. Il n'a produit que " + abricot + " abricots cette semaine");
+                Console.WriteLine("La récolte de l'abricotier est mauvaise .. Il n'a produit que {0} abricots cette semaine", abricot);
             }
             else if (abricot > 10 && abricot < 50)
             {
-                Console.WriteLine("La récolte de l'abricotier est moyenne .. Il n'a produit que " + abricot + " abricots cette semaine..");
+                Console.WriteLine("La récolte de l'abricotier est moyenne .. Il n'a produit que {0} abricots cette semaine..", abricot);
             }
             else if (abricot > 50 && abricot < 80)
             {
-                Console.WriteLine("C'est une bonne récolte ! Vous allez pouvoir récolter " + abricot + " abricots cette semaine !\n" +
+                Console.WriteLine("C'est une bonne récolte ! Vous allez pouvoir récolter {0} abricots cette semaine !\n", abricot +
                                   "A vos fourneaux !");
             }
             else
             {
                 Console.WriteLine("Quel chance !\n" +
-                                  "Une récolte exceptionnel de " + abricot + " abricots s'offre à vous, bonne régalade !");
+                                  "Une récolte exceptionnel de {0} abricots s'offre à vous, bonne régalade !", abricot);
             }
         }
 
