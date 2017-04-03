@@ -300,7 +300,7 @@ namespace Tpinfo6
         /// </summary>
         public override void Mourrir()
         {
-           
+            Console.WriteLine("Oh non ! {0} est mort !", Prenom);
         }
 
         //ToDo == Créer méthode Flemme() 

@@ -6,16 +6,12 @@ using System.Threading.Tasks;
 
 namespace Tpinfo6
 {
-    public class Humanoide : NewHumanity 
+    public class Androide : NewHumanity 
     {
         /*──────────────────|
         |      Méthodes     |
         |──────────────────*/
 
-        public override void Mourrir()
-        {
-            base.Mourrir();
-        }
 
         public override void SeDeplacer()
         {
@@ -31,7 +27,7 @@ namespace Tpinfo6
         /// Default Constructor for Humanoide Class w/ "Pepper" name
         /// </summary>
         /// <param name="Nom"></param>
-        public Humanoide(string Nom)
+        public Androide(string Nom)
         {
             this.Nom = "Pepper";
         }

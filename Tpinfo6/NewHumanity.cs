@@ -64,7 +64,7 @@ namespace Tpinfo6
 
         public virtual void Mourrir()
         {
-
+            Console.WriteLine("\n\tOh non ! {0} est mort ! Comment allez vous faire ?", Nom);
         }
 
 

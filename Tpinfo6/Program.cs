@@ -8,7 +8,7 @@ namespace Tpinfo6
 {
     class Program
     {
-        const double Version = 0.6; 
+        const double VERSION = 0.65; 
 
         static void Main(string[] args)
         {
@@ -29,77 +29,86 @@ namespace Tpinfo6
             Humain Homme = new Humain();
             Homme.Prenom = Console.ReadLine();
 
-            Console.Write("\n" + Homme.Prenom + " est-il accompagné dans la vie ? (o/n) : ");
-            Homme.CreateWife();
+            //Console.Write("\n" + Homme.Prenom + " est-il accompagné dans la vie ? (o/n) : ");
+            //Homme.CreateWife();
 
-            Humanoide Pepper = new Humanoide("Pepper");
+            Androide Pepper = new Androide("Pepper");
             Console.WriteLine("\n\tVotre humanoïde s'appelle " + Pepper.Nom + "\n" +
                               "\tIl effectuera les tâches les plus ingrates pour vous, c'est un alliés précieux.");
 
-            System.Threading.Thread.Sleep(2000);
+            System.Threading.Thread.Sleep(1000);
 
-            Homme.SeDeplacer();
+            //Console.Write("\nVous possédez un chien, comment s'appelle-t-il ? ");
+            //Chien Dog = new Chien();
+            //Dog.Nom = Console.ReadLine();
+            //Dog.RemuerLaQueue();
+
+
+            //Homme.SeDeplacer();
 
             #region Structure de Tests
 
-            Chevre Che = new Chevre();
-            Che.Nom = "Biquette";
-            Che.Beler();
+            Virus h5n1 = new Virus();
+            h5n1.infecterMammifere(Pepper, Homme);
 
-            Console.Write("\nVous possédez un chien, comment s'appelle-t-il ? ");
-            Chien Dog = new Chien();
-            Dog.Nom = Console.ReadLine();
-            Dog.RemuerLaQueue();
+            //Dindon Din = new Dindon();
+            //Din.Nom = "Glou";
+            //Din.Glouglouter();
+            //Din.Manger();
+            //Din.Mourrir();
 
-            Dog.Poursuivre(Dog, Che);
-            Dog.Manger();
-            Dog.Mourrir();
+            //Chevre Che = new Chevre();
+            //Che.Nom = "Biquette";
+            //Che.Beler();
 
-            Mais Mai = new Mais();
-            Mai.Variete = "Maïs";
-            Mai.Pousser();
-            Mai.Fleurir();
-            Mai.Recolter();
-            Mai.Mourrir();
+            //Dog.Poursuivre(Dog, Che);
+            //Dog.Manger();
+            //Dog.Mourrir();
 
-            Chou Cho = new Chou();
-            Cho.Variete = "Chou";
-            Cho.Pousser();
-            Cho.Fleurir();
-            Cho.Recolter();
-            Cho.Mourrir();
+            //Mais Mai = new Mais();
+            //Mai.Variete = "Maïs";
+            //Mai.Pousser();
+            //Mai.Fleurir();
+            //Mai.Recolter();
+            //Mai.Mourrir();
 
-            Cerisier Cer = new Cerisier();
-            Cer.Variete = "Cerisier";
-            Cer.Pousser();
-            Cer.Fleurir();
-            Cer.Recolter();
-            Cer.Mourrir();
+            //Chou Cho = new Chou();
+            //Cho.Variete = "Chou";
+            //Cho.Pousser();
+            //Cho.Fleurir();
+            //Cho.Recolter();
+            //Cho.Mourrir();
 
-            Abricotier Abr = new Abricotier();
-            Cer.Variete = "Abricotier";
-            Abr.Pousser();
-            Abr.Fleurir();
-            Abr.Recolter();
-            Abr.Mourrir();
+            //Cerisier Cer = new Cerisier();
+            //Cer.Variete = "Cerisier";
+            //Cer.Pousser();
+            //Cer.Fleurir();
+            //Cer.Recolter();
+            //Cer.Mourrir();
 
-            Dindon Din = new Dindon();
-            Din.Nom = "Glou";
-            Din.Glouglouter();
-            Din.Manger();
-            Din.Mourrir();
+            //Abricotier Abr = new Abricotier();
+            //Cer.Variete = "Abricotier";
+            //Abr.Pousser();
+            //Abr.Fleurir();
+            //Abr.Recolter();
+            //Abr.Mourrir();
+
+            
 
             #endregion
 
             #region ToDo :
-            /*        Général :
+
+            /*        
+                      Général :
                       Mettre header "Welcome in" persistant
                       Afficher résumé des précedentes saisies (Homme, Femme, Chien) avant démarrage de l'histoire
                       Présenter le Contexte et mettre en place la semaine
 
                       Actions :
+                      Régler la question du couteau pour Tuer()
                       Définir des méthodes d'actions pour les Clones, Androides, Humanoides
-                      Terminer Manger() et Mourrir() pour Humains, Humanïdes, Androïdes
+                      Implémenter les méthodes pour la class Clone
                       -DONE- Définir les méthodes d'actions pour les animaux 
                       -DONE- Mettre en place une struct pour Clone
 
@@ -111,6 +120,7 @@ namespace Tpinfo6
                       Humain :
                       Mettre en place fonction Flemme() == Permet de sauter des jours de la semaine
                       Mettre en place fonction ActionMax() == Terminé la journée "J'en ai marre" + RentrerChezSoi()
+                      Terminer Manger() et Mourrir() pour Humains, Humanoïdes, Androïdes
 
             */
             #endregion

@@ -8,5 +8,15 @@ namespace Tpinfo6
 {
     public abstract class Tools
     {
-    }
+        private string _nom;
+
+        public string Nom
+        {
+            get { return this._nom; }
+            set { this._nom = value; }
+        }
+
+
+
+    }//End of class
 }

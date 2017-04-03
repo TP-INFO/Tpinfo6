@@ -30,7 +30,7 @@ namespace Tpinfo6
         /// </summary>
         public void Mourrir()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Votre Clone {0} est mort dans d'atroce souffrance !", Nom);
         }
 
         /// <summary>
@@ -38,7 +38,7 @@ namespace Tpinfo6
         /// </summary>
         public void RentrerChezSoi()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("{0} rentre chez lui", Nom);
         }
 
         /// <summary>
