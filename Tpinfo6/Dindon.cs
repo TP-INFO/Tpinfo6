@@ -8,7 +8,6 @@ namespace Tpinfo6
 {
     public class Dindon : Animal
     {
-       
 
         /*──────────────────|
         |      Méthodes     |

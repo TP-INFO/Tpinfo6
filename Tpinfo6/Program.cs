@@ -8,7 +8,7 @@ namespace Tpinfo6
 {
     class Program
     {
-        const double VERSION = 0.65; 
+        const double VERSION = 0.66; 
 
         static void Main(string[] args)
         {
@@ -29,8 +29,13 @@ namespace Tpinfo6
             Humain Homme = new Humain();
             Homme.Prenom = Console.ReadLine();
 
-            //Console.Write("\n" + Homme.Prenom + " est-il accompagné dans la vie ? (o/n) : ");
-            //Homme.CreateWife();
+            Console.Write("\n" + Homme.Prenom + " est-il accompagné dans la vie ? (o/n) : ");
+            Homme.CreateWife();
+
+            Console.Write("\nVous possédez un chien, comment s'appelle-t-il ? ");
+            Chien Dog = new Chien();
+            Dog.Nom = Console.ReadLine();
+            Dog.RemuerLaQueue();
 
             Androide Pepper = new Androide("Pepper");
             Console.WriteLine("\n\tVotre humanoïde s'appelle " + Pepper.Nom + "\n" +
@@ -38,62 +43,62 @@ namespace Tpinfo6
 
             System.Threading.Thread.Sleep(1000);
 
-            //Console.Write("\nVous possédez un chien, comment s'appelle-t-il ? ");
-            //Chien Dog = new Chien();
-            //Dog.Nom = Console.ReadLine();
-            //Dog.RemuerLaQueue();
+            #region Histoire
 
+            int jour = (int)Jours.Lundi;
 
-            //Homme.SeDeplacer();
+            while (jour != 8)
+            {
+                switch (jour)
+                {
+                    case 1: /*Lundi*/
+                        /*
+                        Soleil brille, 
+                        Arbres et plantes poussent, 
+
+                        Lune se lève,
+                        
+                        */
+                        break;
+
+                    case 2: /*Mardi*/
+
+                        break;
+
+                    case 3: /*Mercredi*/
+
+                        break;
+
+                    case 4: /*Jeudi*/
+
+                        break;
+
+                    case 5: /*Vendredi*/
+
+                        break;
+
+                    case 6: /*Samedi*/
+
+                        break;
+
+                    case 7: /*Dimanche*/
+
+                        break;
+
+                    default:
+
+                        break;
+                }
+                jour++;
+            }
+
+            #endregion
 
             #region Structure de Tests
 
             Virus h5n1 = new Virus();
             h5n1.infecterMammifere(Pepper, Homme);
 
-            //Dindon Din = new Dindon();
-            //Din.Nom = "Glou";
-            //Din.Glouglouter();
-            //Din.Manger();
-            //Din.Mourrir();
-
-            //Chevre Che = new Chevre();
-            //Che.Nom = "Biquette";
-            //Che.Beler();
-
-            //Dog.Poursuivre(Dog, Che);
-            //Dog.Manger();
-            //Dog.Mourrir();
-
-            //Mais Mai = new Mais();
-            //Mai.Variete = "Maïs";
-            //Mai.Pousser();
-            //Mai.Fleurir();
-            //Mai.Recolter();
-            //Mai.Mourrir();
-
-            //Chou Cho = new Chou();
-            //Cho.Variete = "Chou";
-            //Cho.Pousser();
-            //Cho.Fleurir();
-            //Cho.Recolter();
-            //Cho.Mourrir();
-
-            //Cerisier Cer = new Cerisier();
-            //Cer.Variete = "Cerisier";
-            //Cer.Pousser();
-            //Cer.Fleurir();
-            //Cer.Recolter();
-            //Cer.Mourrir();
-
-            //Abricotier Abr = new Abricotier();
-            //Cer.Variete = "Abricotier";
-            //Abr.Pousser();
-            //Abr.Fleurir();
-            //Abr.Recolter();
-            //Abr.Mourrir();
-
-            
 
             #endregion
 

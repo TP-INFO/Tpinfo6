@@ -53,7 +53,7 @@
     <Compile Include="Clone.cs" />
     <Compile Include="Couteau.cs" />
     <Compile Include="Dindon.cs" />
-    <Compile Include="Enumeration.cs" />
+    <Compile Include="Jours.cs" />
     <Compile Include="Flora.cs" />
     <Compile Include="Humain.cs" />
     <Compile Include="Androide.cs" />
