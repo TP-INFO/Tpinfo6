@@ -16,7 +16,10 @@ namespace Tpinfo6
             set { this._nom = value; }
         }
 
+        public virtual void TuerAnimal()
+        {
 
+        }
 
     }//End of class
 }

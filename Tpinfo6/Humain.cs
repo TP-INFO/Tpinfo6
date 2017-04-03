@@ -196,15 +196,15 @@ namespace Tpinfo6
         public override void ToDoInHouse()
         {
             Console.WriteLine("Que va faire " + Prenom + " maintenant ?\n");
-            Console.WriteLine("-1- Préparer à manger\n" +
+            Console.WriteLine("-1- Manger\n" +
                               "-2- Mettre en charge Pepper\n" +
-                              "-0- Rentrer chez lui");
+                              "-5- Quitter");
 
             UserChoice = Console.ReadLine();
 
             switch (UserChoice)
             {
-                case "1":
+                case "1": /*Manger*/
                     Console.WriteLine("Que vas-t'on faire à manger ?");
                     Console.WriteLine("-1- De la dinde\n" +
                                       "-2- Une bonne salade de maïs\n" +
@@ -212,17 +212,19 @@ namespace Tpinfo6
                     UserChoice = Console.ReadLine();
                     break;
 
-                case "2":
+                case "2": /*Mettre en charge*/
 
                     break;
 
-                case "5":
+                case "5": /*Quitter*/
                     Console.Clear();
                     Console.WriteLine("A bientôt !");
                     Environment.Exit(0);
                     break;
 
-                default:
+                default: /*Erreur*/
+                    Console.WriteLine("Erreur de saisie, veuillez recommencer ..");
+                    ToDoInHouse();
                     break;
             }
         }
@@ -280,14 +282,6 @@ namespace Tpinfo6
         }
 
         /// <summary>
-        /// Permet à notre héros de dormir
-        /// </summary>
-        public void Dormir()
-        {
-
-        }
-
-        /// <summary>
         /// Permet à notre héros de manger
         /// </summary>
         public override void Manger()
@@ -302,8 +296,6 @@ namespace Tpinfo6
         {
             Console.WriteLine("Oh non ! {0} est mort !", Prenom);
         }
-
-        //ToDo == Créer méthode Flemme() 
 
 
         /*──────────────────|

@@ -26,6 +26,19 @@ namespace Tpinfo6
         }
 
         /// <summary>
+        /// Méthode qui fait Dormir un Animal
+        /// </summary>
+        /// <param name="ani"></param>
+        public virtual void AnimalDormir(Animal ani)
+        {
+            Console.WriteLine("\n\t{0} va se coucher dans son panier..", ani.Nom);
+            System.Threading.Thread.Sleep(1500);
+            Console.WriteLine("\t[...]");
+            System.Threading.Thread.Sleep(1500);
+            Console.WriteLine("\t{0} fais 3 tours dans son panier et s'endort paisiblement *zZz ZzzZ zzZz*", ani.Nom);
+        }
+
+        /// <summary>
         /// Fais manger un Animal
         /// </summary>
         public void Manger()

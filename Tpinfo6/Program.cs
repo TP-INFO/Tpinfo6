@@ -8,7 +8,7 @@ namespace Tpinfo6
 {
     class Program
     {
-        const double VERSION = 0.66; 
+        const double VERSION = 0.7; 
 
         static void Main(string[] args)
         {
@@ -38,67 +38,123 @@ namespace Tpinfo6
             Dog.RemuerLaQueue();
 
             Androide Pepper = new Androide("Pepper");
-            Console.WriteLine("\n\tVotre humanoïde s'appelle " + Pepper.Nom + "\n" +
+            Console.WriteLine("\n\tVotre androïde s'appelle " + Pepper.Nom + "\n" +
                               "\tIl effectuera les tâches les plus ingrates pour vous, c'est un alliés précieux.");
 
             System.Threading.Thread.Sleep(1000);
 
+
+
             #region Histoire
 
-            int jour = (int)Jours.Lundi;
+            //int jour = (int)Jours.Lundi;
 
-            while (jour != 8)
-            {
-                switch (jour)
-                {
-                    case 1: /*Lundi*/
-                        /*
-                        Soleil brille, 
-                        Arbres et plantes poussent, 
+            //while (jour != 8)
+            //{
+            //    switch (jour)
+            //    {
+            //        case 1: /*Lundi*/
+            //            /*
+            //            Soleil brille, 
+            //            Arbres poussent, 
+            //            Taille plantes
+            //            Manger
+            //            Dormir
+            //            Lune se lève,
 
-                        Lune se lève,
-                        
-                        */
-                        break;
+            //            */
+            //            break;
 
-                    case 2: /*Mardi*/
+            //        case 2: /*Mardi*/
+            //            /*
+            //            Soleil,
+            //            Arbres Floraison,
+            //            Plantes poussent,
+            //            Manger
+            //            Dormir
+            //            Lune
+            //            */
+            //            break;
 
-                        break;
+            //        case 3: /*Mercredi*/
+            //            /*
+            //            Soleil
+            //            Plantes Floraison
+            //            Virus
+            //            Manger
+            //            Lune
+            //            */
+            //            break;
 
-                    case 3: /*Mercredi*/
+            //        case 4: /*Jeudi*/
+            //            /*
+            //            Soleil
+            //            Arbres Recolte
+            //            Manger
+            //            Tuer Animal (Dindon)
+            //            Manger
+            //            Lune
+            //            */
 
-                        break;
+            //            break;
 
-                    case 4: /*Jeudi*/
+            //        case 5: /*Vendredi*/
+            //            /*
+            //            Soleil
+            //            Taille Arbres
+            //            Virus ?
+            //            Plantes Recolte
 
-                        break;
+            //            Lune
+            //            */
+            //            break;
 
-                    case 5: /*Vendredi*/
+            //        case 6: /*Samedi*/
+            //            /*
+            //            Soleil
+            //            Arbres Mourrir
+            //            Tuer animal (Chèvre)
 
-                        break;
+            //            Lune
+            //            */
+            //            break;
 
-                    case 6: /*Samedi*/
+            //        case 7: /*Dimanche*/
+            //            /*
+            //            Soleil
+            //            Virus Animaux
+            //            Plantes Mourrir
 
-                        break;
+            //            Catastrophe --
+            //            Fin
+            //            */
+            //            break;
 
-                    case 7: /*Dimanche*/
+            //        default:
 
-                        break;
-
-                    default:
-
-                        break;
-                }
-                jour++;
-            }
+            //            break;
+            //    }
+            //    jour++;
+            //}
 
             #endregion
 
             #region Structure de Tests
 
-            Virus h5n1 = new Virus();
-            h5n1.infecterMammifere(Pepper, Homme);
+            //Homme.HumainDormir(Homme);
+            //Dog.AnimalDormir(Dog);
 
+            //Dindon Din = new Dindon();
+            //Din.Nom = "Glou";
+            //Din.Glouglouter();
+
+            //Couteau Cou = new Couteau();
+            //Cou.TuerAnimal(Dog);
+            //Cou.TuerAnimal(Din);
+
+            //Virus h5n1 = new Virus();
+            //h5n1.infecterMammifere(Pepper, Homme);
+            //h5n1.infecterAnimal(Pepper, Dog);
 
             #endregion
 
@@ -107,25 +163,24 @@ namespace Tpinfo6
             /*        
                       Général :
                       Mettre header "Welcome in" persistant
-                      Afficher résumé des précedentes saisies (Homme, Femme, Chien) avant démarrage de l'histoire
                       Présenter le Contexte et mettre en place la semaine
 
                       Actions :
-                      Régler la question du couteau pour Tuer()
-                      Définir des méthodes d'actions pour les Clones, Androides, Humanoides
+                      -DONE- Régler la question du couteau pour Tuer()
+                      -DONE- Créer Méthode pour infecter animaux
+                      Définir des méthodes d'actions pour les Androides
                       Implémenter les méthodes pour la class Clone
                       -DONE- Définir les méthodes d'actions pour les animaux 
                       -DONE- Mettre en place une struct pour Clone
 
                       Flora :
-                      Définir pour chaques jour des changements d'états dans les arbres et plantes
+                      -DONE- Définir pour chaques jour des changements d'états dans les arbres et plantes
                       Empêcher récolte selon les jours
                       -DONE- Méthode aléatoire pour faire mourrir ou non les arbres/plantes
 
                       Humain :
-                      Mettre en place fonction Flemme() == Permet de sauter des jours de la semaine
                       Mettre en place fonction ActionMax() == Terminé la journée "J'en ai marre" + RentrerChezSoi()
-                      Terminer Manger() et Mourrir() pour Humains, Humanoïdes, Androïdes
+                      Terminer Manger() et Mourrir() pour Humains, Androïdes
 
             */
             #endregion

@@ -14,12 +14,12 @@ namespace Tpinfo6
         /// Et de récolter un certains nombres de morceaux de viande
         /// </summary>
         /// <param name="animal"></param>
-        public void TuerAnimal(Animal animal)
+        public void TuerAnimal(Animal ani)
         {
             Random rnd = new Random();
             int coup = rnd.Next(1, 10);
 
-            Console.WriteLine("\n\tVotre {0} a été tué avec le couteau en {2} coups !", animal.Nom, coup);
+            Console.WriteLine("\n\tVotre {0} a été tué avec le couteau en {1} coups !", ani.Nom, coup);
 
             Random rnd2 = new Random();
             int morceau = rnd2.Next(1, 5);

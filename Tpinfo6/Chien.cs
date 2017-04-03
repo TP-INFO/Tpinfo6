@@ -39,6 +39,16 @@ namespace Tpinfo6
             Console.WriteLine("\n\t{0} court après {1}, attention aux dégats !", chien.Nom, animal.Nom);
         }
 
+
+        public override void AnimalDormir(Animal ani)
+        {
+            Console.WriteLine("\n\t{0} va se coucher dans son panier..", ani.Nom);
+            System.Threading.Thread.Sleep(1500);
+            Console.WriteLine("\t[...]");
+            System.Threading.Thread.Sleep(1500);
+            Console.WriteLine("\t{0} fais 3 tours dans son panier et s'endort paisiblement *zZz ZzzZ zzZz*", ani.Nom);
+        }
+
         /// <summary>
         /// Méthode faisant mourrir un chien ..
         /// </summary>

@@ -67,6 +67,20 @@ namespace Tpinfo6
             Console.WriteLine("\n\tOh non ! {0} est mort ! Comment allez vous faire ?", Nom);
         }
 
+        /// <summary>
+        /// Méthode permettant à un Humain de Dormir paisiblement
+        /// </summary>
+        /// <param name="hum"></param>
+        public void HumainDormir(Humain hum)
+        {
+            Console.WriteLine("\n\t{0} va se coucher.", hum.Prenom);
+            System.Threading.Thread.Sleep(1500);
+            Console.WriteLine("\t[...]");
+            System.Threading.Thread.Sleep(1500);
+            Console.WriteLine("\t{0} s'endort paisiblement *zZz ZzzZ zzZz*", hum.Prenom);
+        }
+
+        
 
     }//End Of class
 }
