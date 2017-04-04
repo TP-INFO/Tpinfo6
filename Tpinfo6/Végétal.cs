@@ -32,11 +32,10 @@ namespace _Tpinfo6
             Console.WriteLine("{0} profite de la lumière du soleil pour pousser...", TypeVeg);
         }
         //Override de la méthode mourir
-        public override void Mourir()
+        public override void Mourir(EtreVivant ev)
         {
-            base.Mourir();
+            base.Mourir(ev);
             Console.WriteLine($"Le {TypeVeg} est mort");
-            TypeVeg = null;
         }
     }
 }

@@ -11,7 +11,7 @@ namespace _Tpinfo6
     {
         public static void Main(string[] args)
         {
-            //Instanciation des objets nécessaires à la vie de la ferme
+            //Instanciation des éléments indispensables à la vie de la ferme
         
             Chien chien = new Chien();
             chien.Nom = "mirza";
@@ -28,10 +28,16 @@ namespace _Tpinfo6
             Lune lune = new Lune();
             Soleil soleil = new Soleil();
             Clone clone = new Clone("bobonne");
+            Clone clone2 = clone;
+            clone2.Nom = "esclave";
             Cerisier cerisier = new Cerisier();
             cerisier.TypeVeg = "cerisier";
+            cerisier.NNbreFruits = 1;
+            int cerises = cerisier.NNbreFruits;
             Abricotier abricotier = new Abricotier();
             abricotier.TypeVeg = "abricotier";
+            abricotier.NNbreFruits = 6;
+            int abricots = abricotier.NNbreFruits;
             Maïs maïs = new Maïs();
             maïs.TypeVeg = "maïs";
             Chou chou = new Chou();
@@ -42,42 +48,53 @@ namespace _Tpinfo6
             Console.WriteLine();
             while (jour!=8)
             {
-                //Switch permettant d'indiquer les activité se déroulant sur la ferme, jour par jour
+                //Switch permettant d'indiquer les activités se déroulant sur la ferme, jour par jour
                 switch (jour)
                 {
                     case 1:
                         Console.WriteLine(Jours.Lundi);
-                        ActionsQuotidiennes(soleil, lune, clone, chien, chevre, dindon, femme, mari, chou, maïs, abricotier, cerisier);
+                        ActionsDebutJournee(soleil, lune, chien, chevre, dindon, femme, mari, chou, maïs, abricotier, cerisier);
+                        ActionsFinJournee(soleil, lune, clone, chien, chevre, dindon, femme, mari);
                         Console.WriteLine();
                         break;
                     case 2:
                         Console.WriteLine(Jours.Mardi);
-                        ActionsQuotidiennes(soleil, lune, clone, chien, chevre, dindon, femme, mari, chou, maïs, abricotier, cerisier);
+                        ActionsDebutJournee(soleil, lune, chien, chevre, dindon, femme, mari, chou, maïs, abricotier, cerisier);
+                        ActionsFinJournee(soleil, lune, clone, chien, chevre, dindon, femme, mari);
                         Console.WriteLine();
                         break;
                     case 3:
                         Console.WriteLine(Jours.Mercredi);
-                        ActionsQuotidiennes(soleil, lune, clone, chien, chevre, dindon, femme, mari, chou, maïs, abricotier, cerisier);
+                        ActionsDebutJournee(soleil, lune, chien, chevre, dindon, femme, mari, chou, maïs, abricotier, cerisier);
+                        ActionsFinJournee(soleil, lune, clone, chien, chevre, dindon, femme, mari);
                         Console.WriteLine();
                         break;
                     case 4:
                         Console.WriteLine(Jours.Jeudi);
-                        ActionsQuotidiennes(soleil, lune, clone, chien, chevre, dindon, femme, mari, chou, maïs, abricotier, cerisier);
+                        ActionsDebutJournee(soleil, lune, chien, chevre, dindon, femme, mari, chou, maïs, abricotier, cerisier);
+                        ActionsFinJournee(soleil, lune, clone, chien, chevre, dindon, femme, mari);
                         Console.WriteLine();
                         break;
                     case 5:
                         Console.WriteLine(Jours.Vendredi);
-                        ActionsQuotidiennes(soleil, lune, clone, chien, chevre, dindon, femme, mari, chou, maïs, abricotier, cerisier);
+                        ActionsDebutJournee(soleil, lune, chien, chevre, dindon, femme, mari, chou, maïs, abricotier, cerisier);
+                        ActionsFinJournee(soleil, lune, clone, chien, chevre, dindon, femme, mari);
                         Console.WriteLine();
                         break;
                     case 6:
                         Console.WriteLine(Jours.Samedi);
-                        ActionsQuotidiennes(soleil, lune, clone, chien, chevre, dindon, femme, mari, chou, maïs, abricotier, cerisier);
+                        ActionsDebutJournee(soleil, lune, chien, chevre, dindon, femme, mari, chou, maïs, abricotier, cerisier);
+                        ActionsFinJournee(soleil, lune, clone, chien, chevre, dindon, femme, mari);
                         Console.WriteLine();
                         break;
                     case 7:
                         Console.WriteLine(Jours.Dimanche);
-                        ActionsQuotidiennes(soleil, lune, clone, chien, chevre, dindon, femme, mari, chou, maïs, abricotier, cerisier);
+                        ActionsDebutJournee(soleil, lune, chien, chevre, dindon, femme, mari, chou, maïs, abricotier, cerisier);
+                        couteau.TuerAnimal(dindon);
+                        ActionsFinJournee(soleil, lune, clone, chien, chevre, dindon, femme, mari);
+                        abricots = abricotier.NNbreFruits;
+                        cerises = cerisier.NNbreFruits;
+                        Console.WriteLine("Cette semaine, {0} abricots, {1} cerises!", abricots, cerises);
                         Console.WriteLine();
                         break;
                     default:
@@ -88,9 +105,9 @@ namespace _Tpinfo6
             }
         }
 
-        //Méthode statique indiquant le déroulement d'une journée type
-        public static void ActionsQuotidiennes
-            (Soleil soleil, Lune lune, Clone clone, Chien chien, 
+        //Méthode statique indiquant le déroulement d'un début de journée type
+        public static void ActionsDebutJournee
+            (Soleil soleil, Lune lune, Chien chien, 
             Chevre chevre, Dindon dindon, Humain femme, Humain mari,
             Chou chou, Maïs maïs, Abricotier abricotier, Cerisier cerisier)
         {
@@ -112,6 +129,14 @@ namespace _Tpinfo6
             chien.SeDeplacer("gamelle");
             chien.Manger();
             chien.CourirApres(chien, dindon);
+            abricotier.PousseNouveauxFruits(2);
+            cerisier.PousseNouveauxFruits(4);
+            Console.WriteLine();
+        }
+        //Méthode statique indiquant une fin de journée type
+        public static void ActionsFinJournee(Soleil soleil, Lune lune, Clone clone, Chien chien,
+            Chevre chevre, Dindon dindon, Humain femme, Humain mari)
+        {
             lune.SeLever();
             soleil.SeCoucher();
             chien.SEndormir();
@@ -123,7 +148,6 @@ namespace _Tpinfo6
             clone.SeDeplacer("abricotier");
             clone.SeDeplacer("maïs");
             clone.SeDeplacer("chou");
-            Console.WriteLine();
         }
     }
 }

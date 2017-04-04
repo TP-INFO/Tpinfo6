@@ -9,7 +9,7 @@ namespace _Tpinfo6
     /// <summary>
     /// Classe cerisier, fille de végétal
     /// </summary>
-    public class Cerisier : Végétal
+    public class Cerisier : ArbreFruitier
     {
         //Constructeur vide
         public Cerisier()
@@ -24,9 +24,15 @@ namespace _Tpinfo6
         }
 
         //Override de la méthode mourir
-        public override void Mourir()
+        public override void Mourir(EtreVivant ev)
         {
-            base.Mourir();
+            base.Mourir(ev);
+        }
+
+        public override void PousseNouveauxFruits(int tauxCroissance)
+        {
+            base.PousseNouveauxFruits(tauxCroissance);
+            Console.WriteLine("Chouette, plein de nouvelles cerises");
         }
     }
 }

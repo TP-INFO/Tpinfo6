@@ -16,6 +16,18 @@ namespace _Tpinfo6
         {
             base.SeRéveiller();
         }
+        public override void SEndormir()
+        {
+            base.SEndormir();
+        }
+        public override void Manger()
+        {
+            base.Manger();
+        }
+        public override void Mourir(EtreVivant ev)
+        {
+            base.Mourir(ev);
+        }
         //Méthode écrivant le cri du dindon
         public void Glouglouter()
         {

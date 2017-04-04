@@ -58,14 +58,12 @@ namespace _Tpinfo6
         }
 
         /// <summary>
-        /// Override de la méthode mourir de ETreVivant
+        /// Override de la méthode mourir de EtreVivant
         /// </summary>
-        public override void Mourir()
+        public override void Mourir(EtreVivant ev)
         {
-            base.Mourir();
+            base.Mourir(ev);
             Console.WriteLine("{0} est mort(e)! RIP {0}!", Nom);
-            Nom = null;
         }
-        
     }
 }

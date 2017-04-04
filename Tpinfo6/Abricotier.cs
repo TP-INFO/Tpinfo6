@@ -10,7 +10,7 @@ namespace _Tpinfo6
     /// Classe abricotier fille de Végétal
     /// </summary>
     
-    public class Abricotier : Végétal
+    public class Abricotier : ArbreFruitier
     {
         //Constructeur vide
         public Abricotier()
@@ -26,9 +26,15 @@ namespace _Tpinfo6
             base.Pousser();
         }
 
-        public override void Mourir()
+        public override void Mourir(EtreVivant ev)
         {
-            base.Mourir();
+            base.Mourir(ev);
+        }
+
+        public override void PousseNouveauxFruits(int tauxCroissance)
+        {
+            base.PousseNouveauxFruits(tauxCroissance);
+            Console.WriteLine("Chouette, plein de nouveaux abricots!");
         }
     }
 }

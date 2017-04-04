@@ -17,9 +17,9 @@ namespace _Tpinfo6
 
         }
         //Méthode virtuelle mourir
-        public virtual void Mourir()
+        public virtual void Mourir(EtreVivant ev)
         {
-            
+            ev = null;
         }
     }
 }

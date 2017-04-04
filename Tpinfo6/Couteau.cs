@@ -20,7 +20,7 @@ namespace _Tpinfo6
         //Méthode indiquant que le couteau a permis de tuer un animal passé en argument
         public void TuerAnimal(Animal a)
         {
-            a.Mourir();
+            a.Mourir(a);
             Console.WriteLine("{0} a été tué avec le couteau !", a.Nom);
         }
 

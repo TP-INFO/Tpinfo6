@@ -22,9 +22,9 @@ namespace _Tpinfo6
             base.Pousser();
         }
         //Override de la méthode mourir de Etrevivant
-        public override void Mourir()
+        public override void Mourir(EtreVivant ev)
         {
-            base.Mourir();
+            base.Mourir(ev);
         }
     }
 }

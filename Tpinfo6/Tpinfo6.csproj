@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Abricotier.cs" />
     <Compile Include="Androïde.cs" />
+    <Compile Include="ArbreFruitier.cs" />
     <Compile Include="Astre.cs" />
     <Compile Include="Cerisier.cs" />
     <Compile Include="Chevre.cs" />

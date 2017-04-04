@@ -26,9 +26,9 @@ namespace _Tpinfo6
         {
             base.Manger();
         }
-        public override void Mourir()
+        public override void Mourir(EtreVivant ev)
         {
-            base.Mourir();
+            base.Mourir(ev);
         }
     }
 }

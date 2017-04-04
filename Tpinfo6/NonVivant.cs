@@ -26,6 +26,5 @@ namespace _Tpinfo6
                 _type = value;
             }
         }
-
     }
 }
