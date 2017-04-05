@@ -8,8 +8,14 @@ namespace _Tpinfo6
 {
     public abstract class ArbreFruitier : Végétal
     {
+        /// <summary>
+        /// Private double indiquant le nombre de fruits sur l'arbre
+        /// </summary>
         private double _nNbreFruits;
         
+        /// <summary>
+        /// Accesseur
+        /// </summary>
         public double NNbreFruits
         {
             get
@@ -21,12 +27,17 @@ namespace _Tpinfo6
                 this._nNbreFruits=value;
             }
         }
-
+        /// <summary>
+        /// Constructeur vide
+        /// </summary>
         public ArbreFruitier()
         {
 
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="tauxCroissance"></param>
         public virtual void PousseNouveauxFruits(double tauxCroissance)
         {
             double temp = _nNbreFruits;

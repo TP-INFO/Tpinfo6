@@ -12,7 +12,9 @@ namespace _Tpinfo6
     
     public class Abricotier : ArbreFruitier
     {
-        //Constructeur vide
+        /// <summary>
+        /// Constructeur vide
+        /// </summary>
         public Abricotier()
         {
 
