@@ -6,13 +6,11 @@ using System.Threading.Tasks;
 
 namespace _Tpinfo6
 {
-
     class Program
     {
         public static void Main(string[] args)
         {
             //Instanciation des éléments indispensables à la vie de la ferme
-        
             Chien chien = new Chien();
             chien.Nom = "mirza";
             Chevre chevre = new Chevre();
@@ -33,11 +31,11 @@ namespace _Tpinfo6
             Cerisier cerisier = new Cerisier();
             cerisier.TypeVeg = "cerisier";
             cerisier.NNbreFruits = 1;
-            int cerises = cerisier.NNbreFruits;
+            int cerises = (int)cerisier.NNbreFruits;
             Abricotier abricotier = new Abricotier();
             abricotier.TypeVeg = "abricotier";
             abricotier.NNbreFruits = 6;
-            int abricots = abricotier.NNbreFruits;
+            int abricots = (int)abricotier.NNbreFruits;
             Maïs maïs = new Maïs();
             maïs.TypeVeg = "maïs";
             Chou chou = new Chou();
@@ -92,8 +90,8 @@ namespace _Tpinfo6
                         ActionsDebutJournee(soleil, lune, chien, chevre, dindon, femme, mari, chou, maïs, abricotier, cerisier);
                         couteau.TuerAnimal(dindon);
                         ActionsFinJournee(soleil, lune, clone, chien, chevre, dindon, femme, mari);
-                        abricots = abricotier.NNbreFruits;
-                        cerises = cerisier.NNbreFruits;
+                        abricots = (int)abricotier.NNbreFruits;
+                        cerises = (int)cerisier.NNbreFruits;
                         Console.WriteLine("Cette semaine, {0} abricots, {1} cerises!", abricots, cerises);
                         Console.WriteLine();
                         break;
@@ -129,8 +127,8 @@ namespace _Tpinfo6
             chien.SeDeplacer("gamelle");
             chien.Manger();
             chien.CourirApres(chien, dindon);
-            abricotier.PousseNouveauxFruits(2);
-            cerisier.PousseNouveauxFruits(4);
+            abricotier.PousseNouveauxFruits(1.7);
+            cerisier.PousseNouveauxFruits(1.6);
             Console.WriteLine();
         }
         //Méthode statique indiquant une fin de journée type

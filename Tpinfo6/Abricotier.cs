@@ -31,7 +31,7 @@ namespace _Tpinfo6
             base.Mourir(ev);
         }
 
-        public override void PousseNouveauxFruits(int tauxCroissance)
+        public override void PousseNouveauxFruits(double tauxCroissance)
         {
             base.PousseNouveauxFruits(tauxCroissance);
             Console.WriteLine("Chouette, plein de nouveaux abricots!");
