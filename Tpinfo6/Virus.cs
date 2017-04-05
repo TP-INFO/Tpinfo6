@@ -26,13 +26,13 @@ namespace Tpinfo6
             else if(infect == 1)
             {
                 Console.WriteLine("\n\tUn virus provoquant une grave infection a été détécté par {0},\n" +
-                                  "\tmalheureusement {1} est infecté ..", and.Nom, hom.Prenom);
+                                  "\tmalheureusement {1} est infecté ..", and.Nom, hom.Nom);
                 Console.WriteLine("\tSes jours sont désormais comptés ..");
             }
             else if (infect == 2)
             {
                 Console.WriteLine("\n\tUn virus provoquant une grave infection a été détécté par {0}," + 
-                                  "\tmalheureusement {1} est infecté ..", and.Nom, hom.Prenom);
+                                  "\tmalheureusement {1} est infecté ..", and.Nom, hom.Nom);
                 Console.WriteLine("\tSes jours sont désormais comptés ..");
             }
         }

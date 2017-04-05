@@ -27,12 +27,6 @@ namespace Tpinfo6
             set { _nom = value; }
         }
 
-        public string Prenom
-        {
-            get { return this._prenom; }
-            set { _prenom = value; }
-        }
-
         /*──────────────────|
         |      Méthodes     |
         |──────────────────*/
@@ -68,19 +62,17 @@ namespace Tpinfo6
         }
 
         /// <summary>
-        /// Méthode permettant à un Humain de Dormir paisiblement
+        /// Méthode permettant à un humain de s'endormir !
         /// </summary>
-        /// <param name="hum"></param>
-        public void HumainDormir(Humain hum)
+        public virtual void Dormir()
         {
-            Console.WriteLine("\n\t{0} va se coucher.", hum.Prenom);
+            Console.WriteLine("\n\t{0} va se coucher.", Nom);
             System.Threading.Thread.Sleep(1500);
             Console.WriteLine("\t[...]");
             System.Threading.Thread.Sleep(1500);
-            Console.WriteLine("\t{0} s'endort paisiblement *zZz ZzzZ zzZz*", hum.Prenom);
+            Console.WriteLine("\t{0} s'endort paisiblement *zZz ZzzZ zzZz*", Nom);
         }
 
-        
 
     }//End Of class
 }

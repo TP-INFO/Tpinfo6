@@ -39,7 +39,10 @@ namespace Tpinfo6
             Console.WriteLine("\n\t{0} court après {1}, attention aux dégats !", chien.Nom, animal.Nom);
         }
 
-
+        /// <summary>
+        /// Permet à un animal de se coucher après une belle journée !
+        /// </summary>
+        /// <param name="ani"></param>
         public override void AnimalDormir(Animal ani)
         {
             Console.WriteLine("\n\t{0} va se coucher dans son panier..", ani.Nom);

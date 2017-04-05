@@ -22,21 +22,21 @@ namespace Tpinfo6
 
             if (chou < 5)
             {
-                Console.WriteLine("Savez-vous planter les choux ? .. Votre champ n'a produit que {0} choux cette semaine..", chou);
+                Console.WriteLine("\tSavez-vous planter les choux ? .. Votre champ n'a produit que {0} choux cette semaine..", chou);
             }
             else if (chou > 5 && chou < 10)
             {
-                Console.WriteLine("Votre technique n'est certainement pas bonne .. Le champ n'a produit que {0} choux cette semaine..", chou);
+                Console.WriteLine("\tVotre technique n'est certainement pas bonne .. Le champ n'a produit que {0} choux cette semaine..", chou);
             }
             else if (chou > 10 && chou < 20)
             {
-                Console.WriteLine("C'est une bonne récolte que vous avez là ! Vous allez pouvoir récolter {0} choux cette semaine !\n", chou +
-                                  "A vos fourneaux !");
+                Console.WriteLine("\tC'est une bonne récolte que vous avez là ! Vous allez pouvoir récolter {0} choux cette semaine !\n", chou);
+                Console.WriteLine("\tA vos fourneaux !");
             }
             else
             {
-                Console.WriteLine("Quel chance !\n" +
-                                  "Une récolte exceptionnel de {0} choux s'offre à vous, bonne régalade !", chou);
+                Console.WriteLine("\tQuel chance !\n" +
+                                  "\tUne récolte exceptionnel de {0} choux s'offre à vous, bonne régalade !", chou);
             }
         }
 
