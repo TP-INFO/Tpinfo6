@@ -16,6 +16,14 @@ namespace Tpinfo6
             set { _nom = value; }
         }
 
+        private string _type;
+
+        public string Type
+        {
+            get { return this._type; }
+            set { _type = value; }
+        }
+
         /*──────────────────|
         |      Méthodes     |
         |──────────────────*/

@@ -2,16 +2,18 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Tpinfo6
 {
     class Program
     {
-        const double VERSION = 0.8; 
+        const double VERSION = 0.9; 
 
         static void Main(string[] args)
         {
+
             InitiateStory.Start();
 
             InitiateStory.ConfigStory();
@@ -57,14 +59,16 @@ namespace Tpinfo6
                       -DONE- Définir pour chaques jour des changements d'états dans les arbres et plantes
                       Empêcher récolte selon les jours
                       -DONE- Méthode aléatoire pour faire mourrir ou non les arbres/plantes
-                      Méthode aléatoire quand fermier taille pour que l'arbre meurt
+                      -DONE- Méthode aléatoire quand fermier taille pour que l'arbre meurt
 
                       Humain :
                       -DONE- Implémenter fonction RentrerChezSoi()
-                      Terminer Manger() et Mourrir() pour Humains, Androïdes
-                      Implementer Switch-Alt(Manger)
+                      -DONE- Terminer Manger() et Mourrir() pour Humains, Androïdes
+                      -DONE- Implementer Switch-Alt(Manger)
             */
             #endregion
+
+
 
         }//End of Main
     }

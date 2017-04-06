@@ -57,6 +57,7 @@ namespace Tpinfo6
             switch (UserChoice)
             {
                 case "1": /*Champs*/
+
                     Console.WriteLine("\n\t" + Nom + " se met en route ..");
                     System.Threading.Thread.Sleep(1000);
                     Console.WriteLine("\t[...]");
@@ -65,6 +66,7 @@ namespace Tpinfo6
                     break;
 
                 case "2": /*Maison*/
+
                     Console.WriteLine("\n\t" + Nom + " se met en route ..");
                     System.Threading.Thread.Sleep(1000);
                     Console.WriteLine("\t[...]");
@@ -74,13 +76,18 @@ namespace Tpinfo6
                     break;
 
                 case "5": //Quitter
+
                     Console.Clear();
                     Console.WriteLine("A bientôt !");
                     Environment.Exit(0);
+
                     break;
+
                 default:
+
                     Console.WriteLine("Erreur dans la saisie ..");
                     SeDeplacer();
+
                     break;
             }
             Console.WriteLine();
@@ -103,6 +110,7 @@ namespace Tpinfo6
             switch (UserChoice)
             {
                 case "1": /*Tailler les arbres*/
+
                     Console.WriteLine("\n\t" + Nom + " se met en route vers le verger..\n");
                     System.Threading.Thread.Sleep(1000);
                     Console.WriteLine("\t[...]");
@@ -119,30 +127,45 @@ namespace Tpinfo6
                     #region Switch-Alt (Case1 -Tailler)
                     switch (UserChoice)
                     {
-                        case "1": /*Taille Cerisier*/ //ToDo == Ajouter Pepper qui ramasse un nombre de branches
-                            Console.WriteLine(Nom + " taille le cerisier"); //Ajouter un Random de résultats après taille
-                            
+                        case "1": /*Taille Cerisier*/ 
+
+                            Console.WriteLine(Nom + " taille le cerisier");
+
+                            Cerisier cer = new Cerisier();
+                            cer.Variete = "le cerisier";
+                            TaillerArbre(cer);
+
                             ToDo();
                             break;
 
                         case "2": /*Taille Abricotier*/
+
                             Console.WriteLine(Nom + " taille l'abricotier");
+
+                            Abricotier abr = new Abricotier();
+                            abr.Variete = "l'abricotier";
+
                             ToDo();
                             break;
 
                         case "0": /*Rentrer chez Soi*/
+
                             Console.WriteLine(Nom + " rentre chez lui");
-                            SeDeplacer(); //Remplaçer par RentrerChezSoi()
+
+                            RentrerChezSoi();
                             break;
 
                         case "5": /*Quitter*/
+
                             Console.Clear();
                             Console.WriteLine("A bientôt !");
                             Environment.Exit(0);
                             break;
 
                         default:
+
                             Console.WriteLine("Une erreur est survenu ..");
+
                             ToDo();
                             break;
                     }
@@ -150,6 +173,7 @@ namespace Tpinfo6
                     break;
 
                 case "2": /*Ramasser les fruits*/
+
                     Console.WriteLine("\n\t" + Nom + " se met en route vers le champ..");
                     System.Threading.Thread.Sleep(1000);
                     Console.WriteLine("\t[...]");
@@ -172,6 +196,7 @@ namespace Tpinfo6
                             Console.WriteLine("\n\t" + Nom + " va ramasser des cerises");
                             System.Threading.Thread.Sleep(1000);
                             Console.WriteLine("\t[...]\n");
+
                             Cerisier Cer = new Cerisier();
                             Console.WriteLine("");
                             Cer.GenerateCerise();
@@ -183,6 +208,7 @@ namespace Tpinfo6
                             Console.WriteLine("\n\t" + Nom + " va ramasser des abricots");
                             System.Threading.Thread.Sleep(1000);
                             Console.WriteLine("\t[...]\n");
+
                             Abricotier Abr = new Abricotier();
                             Abr.GenerateAbricot();
                             Console.WriteLine("");
@@ -190,22 +216,31 @@ namespace Tpinfo6
                             break;
 
                         case "3": /*Ramasser des choux*/
+
                             Console.WriteLine("\n\t" + Nom + " va ramasser des choux");
                             System.Threading.Thread.Sleep(1000);
                             Console.WriteLine("\t[...]\n");
+
                             Chou cho = new Chou();
                             cho.GenerateChou();
                             Console.WriteLine("");
                             ToDo();
                             break;
 
+                        case "0": /*Rentrer chez Soi*/
+
+                            RentrerChezSoi();
+                            break;
+
                         case "5": /*Quitter*/
+
                             Console.Clear();
                             Console.WriteLine("A bientôt !");
                             Environment.Exit(0);
                             break;
 
                         default: /*Erreur*/
+
                             Console.WriteLine("Une erreur est survenu ..");
                             ToDo();
                             break;
@@ -214,23 +249,26 @@ namespace Tpinfo6
                     break;
 
                 case "3": /*Récolter du Maïs*/
+
                     Console.WriteLine("\n\t" + Nom + " va récolter du Maïs ..");
                     System.Threading.Thread.Sleep(1000);
-
                     Console.WriteLine("\t[...]\n");
                     System.Threading.Thread.Sleep(1000);
 
                     Mais mai = new Mais();
                     mai.GenerateMais();
                     Console.WriteLine("");
+
                     ToDo();
                     break;
 
                 case "0": /*Rentrer chez Soi*/
+
                     RentrerChezSoi();
                     break;
 
                 case "5": /*Quitter*/
+
                     Console.Clear();
                     Console.WriteLine("A bientôt !");
                     Environment.Exit(0);
@@ -250,7 +288,7 @@ namespace Tpinfo6
         {
             Console.WriteLine("Que va faire " + Nom + " maintenant ?\n");
             Console.WriteLine("-1- Manger\n" +
-                              "-2- Mettre en charge Pepper\n" +
+                              "-2- Regarder par la fenêtre ..\n" +
                               "-3- Dormir\n" +
                               "-5- Quitter");
 
@@ -265,28 +303,70 @@ namespace Tpinfo6
                                       "-3- Une bonne soupe aux choux\n" +
                                       "-5- Quitter");
                     UserChoice = Console.ReadLine();
+
                     #region Switch-Alt (Manger)
                     switch (UserChoice)
                     {
                         case "1": /*Dinde*/
-                            //Implement Tuer() + Cuisiner() + Manger()
+
+                            Couteau cou = new Couteau();
+                            Dindon din = new Dindon();
+                            din.Type = "Dinde";
+                            din.Glouglouter();
+                            cou.TuerAnimal(din);
+                            System.Threading.Thread.Sleep(1000);
+                            
+                            Console.WriteLine("\n\t{0} met les morceaux dans la marmitte et commence à faire cuire..", Nom);
+                            System.Threading.Thread.Sleep(1000);
+                            Console.WriteLine("\t[...]");
+                            System.Threading.Thread.Sleep(1000);
+                            Console.WriteLine("\n\t{0} se régale d'un bon ragoût de {1} !", Nom, din.Type);
+                            System.Threading.Thread.Sleep(1000);
+                            Console.WriteLine("\t[...]");
+
+                            ToDoInHouse();
                             break;
 
                         case "2": /*Salade Maïs*/
-                            //Implement Preparer() + Manger()
+
+                            Mais mai = new Mais();
+                            mai.Variete = "maïs";
+
+                            Console.WriteLine("\n\t{0} se prépare une bonne salade de {1}..", Nom, mai.Variete);
+                            System.Threading.Thread.Sleep(1000);
+                            Console.WriteLine("\t[...]");
+                            System.Threading.Thread.Sleep(1000);
+                            Console.WriteLine("\n\tQuel régalade, cette salade !");
+
+                            ToDoInHouse();
                             break;
 
                         case "3": /*Soupe de Chou*/
-                            //Implement Preparer() + Manger()
+
+                            Chou cho = new Chou();
+                            cho.Variete = "choux";
+
+                            Console.WriteLine("\n\t{0} met les choux dans la marmitte et commence à faire cuire..", Nom);
+                            System.Threading.Thread.Sleep(1000);
+                            Console.WriteLine("\t[...]");
+                            System.Threading.Thread.Sleep(1000);
+                            Console.WriteLine("\n\t{0} se régale d'une bonne soupe de {1} !", Nom, cho.Variete);
+                            System.Threading.Thread.Sleep(1000);
+                            Console.WriteLine("\t[...]");
+
+
+                            ToDoInHouse();
                             break;
 
                         case "5": /*Quitter*/
+
                             Console.Clear();
                             Console.WriteLine("A bientôt !");
                             Environment.Exit(0);
                             break;
 
                         default: /*Erreur*/
+
                             Console.WriteLine("Erreur de saisie, veuillez recommencer ..");
                             ToDoInHouse();
                             break;
@@ -294,21 +374,31 @@ namespace Tpinfo6
                     #endregion
                     break;
 
-                case "2": /*Mettre en charge*/
+                case "2": /*Regarder Fenêtre*/
 
+                    Console.WriteLine("\n\t{0} regarde par la fenêtre..", Nom);
+                    System.Threading.Thread.Sleep(2000);
+                    Console.WriteLine("\t[...]\n");
+                    System.Threading.Thread.Sleep(2000);
+                    Console.WriteLine("\t[...]\n");
+
+                    ToDoInHouse();
                     break;
 
                 case "3": /*Dormir*/
+
                     Dormir();
                     break;
 
                 case "5": /*Quitter*/
+
                     Console.Clear();
                     Console.WriteLine("A bientôt !");
                     Environment.Exit(0);
                     break;
 
                 default: /*Erreur*/
+
                     Console.WriteLine("Erreur de saisie, veuillez recommencer ..");
                     ToDoInHouse();
                     break;
@@ -372,7 +462,7 @@ namespace Tpinfo6
         /// </summary>
         public override void Manger()
         {
-            
+           
         }
 
         /// <summary>
@@ -381,8 +471,46 @@ namespace Tpinfo6
         public override void Mourrir()
         {
             Console.WriteLine("Oh non ! {0} est mort !", Nom);
+
+            Console.Clear();
+            Console.WriteLine("La partie est terminé. GAME OVER");
+            Environment.Exit(0);
         }
 
+        /// <summary>
+        /// Méthode permettant d'avoir un nombre de branches selon la taille de l'arbre
+        /// Avec une méthode qui fait mourrir l'arbre si il a été trop taillé
+        /// </summary>
+        public void TaillerArbre(Flora flo)
+        {
+            Random rnd = new Random();
+            int NbreBranches = rnd.Next(3, 20);
+
+            if (NbreBranches < 5)
+            {
+                Console.WriteLine("\tUn peu de nerfs, {0} ne va pas se tailler tout seul !", flo.Variete);
+                Console.WriteLine("\t{0} ramassent les {1} branches et les met en tas..", Nom, NbreBranches);
+                System.Threading.Thread.Sleep(1000);
+                Console.WriteLine("\t[...]");
+                System.Threading.Thread.Sleep(1000);
+            }
+            else if (NbreBranches > 5 && NbreBranches < 12)
+            {
+                Console.WriteLine("\tEn voilà un beau {0} bien taillé !", flo.Variete);
+                Console.WriteLine("\t{0} ramassent les {1} branches et les met en tas..", Nom, NbreBranches);
+                System.Threading.Thread.Sleep(1000);
+                Console.WriteLine("\t[...]");
+                System.Threading.Thread.Sleep(1000);
+            }
+            else
+            {
+                Console.WriteLine("\tOh non, vous avez trop tailler {0} !", flo.Variete);
+                Console.WriteLine("\t{0} brûle l'arbre, il n'est plus utilisable..", Nom);
+                System.Threading.Thread.Sleep(1000);
+                Console.WriteLine("\t[...]");
+                System.Threading.Thread.Sleep(1000);
+            }
+        }
 
         /*──────────────────|
         |   Constructeurs   |
