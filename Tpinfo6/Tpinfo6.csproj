@@ -59,6 +59,7 @@
     <Compile Include="ISeDeplacer.cs" />
     <Compile Include="Jours.cs" />
     <Compile Include="Lune.cs" />
+    <Compile Include="DerouleJournee.cs" />
     <Compile Include="Maïs.cs" />
     <Compile Include="NonVivant.cs" />
     <Compile Include="Program.cs" />

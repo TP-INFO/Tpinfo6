@@ -23,7 +23,7 @@ namespace _Tpinfo6
         {
             base.SEndormir();
         }
-
+        
         public override void SeDeplacer(string destination)
         {
             base.SeDeplacer(destination);
@@ -37,6 +37,7 @@ namespace _Tpinfo6
         public override void Mourir(EtreVivant ev)
         {
             base.Mourir(ev);
+           
         }
 
         //Méthode indiquant que l'animal crie
