@@ -13,6 +13,7 @@ namespace _Tpinfo6
     {
         //Déclaration en protected du type de végétal
         protected string _typeVeg;
+        protected int _quantite;
 
         //Accesseur du type
         public string TypeVeg
@@ -26,6 +27,7 @@ namespace _Tpinfo6
                 this._typeVeg = value;
             }
         }
+        public int Quantite { get; set; }
         //Méthode indiquant que le végétal pousse
         public virtual void Pousser()
         {

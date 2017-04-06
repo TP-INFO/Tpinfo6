@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace _Tpinfo6
 {
-    class DerouleJournee
+    public static class DerouleJournee
     {
-
-
         public static void ActionsJournee()
         {
             //Instanciation des éléments indispensables à la vie de la ferme
@@ -61,8 +59,8 @@ namespace _Tpinfo6
             chien.SeDeplacer("gamelle");
             chien.Manger();
             chien.CourirApres(chien, dindon);
-            abricotier.PousseNouveauxFruits(1.7);
-            cerisier.PousseNouveauxFruits(1.6);
+            abricotier.PousseNouveauxFruits(13);
+            cerisier.PousseNouveauxFruits(21);
             lune.SeLever();
             soleil.SeCoucher();
             chien.SEndormir();

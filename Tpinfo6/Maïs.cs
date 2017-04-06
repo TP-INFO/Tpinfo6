@@ -14,7 +14,10 @@ namespace _Tpinfo6
         //Constructeur vide
         public Maïs()
         {
-
+            Random rndQ = new Random();
+            int quant = rndQ.Next(1000);
+            Quantite = quant;
+            Console.WriteLine("");
         }
         //OVerride de la méthode pousser de végétal
         public override void Pousser()

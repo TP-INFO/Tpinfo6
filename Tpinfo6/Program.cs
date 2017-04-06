@@ -46,7 +46,6 @@ namespace _Tpinfo6
                     case 6:
                         Console.WriteLine(Jours.Samedi);
                         DerouleJournee.ActionsJournee();
-
                         Console.WriteLine();
                         break;
                     case 7:
