@@ -9,15 +9,27 @@ namespace Tpinfo6
     {
         private string Type;
 
+        public string Nom { get; set; }
+
+                //public Animaux(string nom)
+        //{
+        //    NOM = nom; 
+        //}
+
         public Animaux(string Type, RessourcesGenre Genre) : base (Genre)
         {
             this.Type = Type;
         }
+
+
+
 
         public string LeType
         {
             get { return Type;}
             set { Type = value;}            
         }
+
+
     }
 }

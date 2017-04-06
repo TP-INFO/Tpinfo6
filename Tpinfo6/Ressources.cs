@@ -10,12 +10,15 @@ namespace Tpinfo6
     /// Le virus peut être affamé et infecter ou bien devenir malade quand soin ou traitement.
     /// L'attribut genre peut signifier Animal, Végétal ou Virus (voir enum)
     /// </summary>
-    public abstract class Ressources
-    {
+    public abstract class Ressources 
+        {
         private bool Affame;
         private bool Malade;
         private RessourcesGenre Genre;
         private int Quantité;
+        private int Resistance;
+
+        #region Constructeur.
 
         public Ressources(RessourcesGenre Genre)
         {
@@ -28,11 +31,15 @@ namespace Tpinfo6
             this.Affame = Affame;
         }
 
-        public void Ressource(bool Malade)
+        public Ressources(bool Malade, int Resistance)
         {
             this.Malade = Malade;
+            this.Resistance = Resistance;
         }
 
+        #endregion
+
+        #region Accesseurs
         public bool LAffame
         {
             get { return Affame; }
@@ -56,5 +63,13 @@ namespace Tpinfo6
             set { Quantité = value;}
         }
 
+        public int LaResistance
+        {
+            get { return LaResistance; }
+            set { LaResistance = value;}
+        }
+        #endregion
+
+        
     }
 }

@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="Tpinfo6.Animaux">
-    <Position X="2" Y="4.25" Width="1.5" />
+    <Position X="2.25" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAA=</HashCode>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAA=</HashCode>
       <FileName>Animaux.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Tpinfo6.Vegetal">
-    <Position X="4.5" Y="4.5" Width="1.5" />
+    <Position X="4.5" Y="5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
       <FileName>Vegetal.cs</FileName>
@@ -17,43 +17,65 @@
   <Class Name="Tpinfo6.Ressources">
     <Position X="4.25" Y="0.5" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AIAAAIACICAAAAAAAAIEAAAAAAAAAAAAAAACIAAAAAA=</HashCode>
+      <HashCode>AIAAAIACICAAAAAAAAIAAAAAAAAAAAAAAIACIAAIAAA=</HashCode>
       <FileName>Ressources.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Tpinfo6.Occupant">
-    <Position X="9.75" Y="2.5" Width="1.5" />
+    <Position X="9.5" Y="2.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAQACCAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAIAAQACCAAAAAAAAAAAAAiAA=</HashCode>
       <FileName>Occupant.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="Tpinfo6.Virus">
-    <Position X="7" Y="4.5" Width="1.5" />
+    <Position X="7" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>ACAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>ACAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAgAgAA=</HashCode>
       <FileName>Virus.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Interface Name="Tpinfo6.Ioutils">
-    <Position X="9.5" Y="0.75" Width="1.5" />
+  <Class Name="Tpinfo6.Outils">
+    <Position X="7.5" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Ioutils.cs</FileName>
+      <HashCode>AIgAAAAABAAAAAAAAAAAYAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Outils.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tpinfo6.Initialisation">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAKAAAAAAAAAAAEAgQAIAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Initialisation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Tpinfo6.IQuotidien">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAiAA=</HashCode>
+      <FileName>Quotidien.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Enum Name="Tpinfo6.Semaine">
-    <Position X="13.75" Y="1.5" Width="1.5" />
+    <Position X="15.25" Y="1" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAABAAAQAQIAAAAAAAAAQgAAAgAAAAAAAA=</HashCode>
       <FileName>Semaine.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="Tpinfo6.RessourcesGenre">
-    <Position X="1.25" Y="1" Width="1.5" />
+    <Position X="2.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAIAAAAAAAAIA=</HashCode>
       <FileName>RessourcesGenre.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Tpinfo6.NatureOccupant">
+    <Position X="11.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NatureOccupant.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Font Name="Segoe UI" Size="9" />

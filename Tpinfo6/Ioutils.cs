@@ -5,7 +5,4 @@ using System.Text;
 
 namespace Tpinfo6
 {
-    public interface Ioutils
-    {
-    }
 }

@@ -16,8 +16,8 @@ namespace Tpinfo6
 
         public string LEssence
         {
-            get { return LEssence;}
-            set { LEssence = value;}
+            get { return Essence;}
+            set { Essence = value;}
         }
     }
 }

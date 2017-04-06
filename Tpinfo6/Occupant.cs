@@ -7,13 +7,14 @@ namespace Tpinfo6
 {
     /// <summary>
     /// On trouve le couple de fermier et l'androide.
+    /// La nature correspond entre humain et artificiel.
     /// </summary>
-    public class Occupant
+    public class Occupant : IQuotidien
     {
         private string Nom;
-        private string Nature;
+        private NatureOccupant Nature;
 
-        public Occupant(string Nom, string Nature)
+        public Occupant(string Nom, NatureOccupant Nature)
         {
             this.Nom = Nom;
             this.Nature = Nature;
@@ -21,14 +22,29 @@ namespace Tpinfo6
 
         public string LeNom
         {
-            get { return LeNom;}
-            set { LeNom = value;}
+            get { return Nom;}
+            set { Nom = value;}
         }
 
-        public string LaNature
+        public NatureOccupant LaNature
         {
-            get { return LaNature;}
-            set { LaNature = value;}
+            get { return Nature;}
+            set { Nature = value;}
+        }
+
+        public void Nourrir()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Soigner()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Recolter()
+        {
+            throw new NotImplementedException();
         }
     }
 }

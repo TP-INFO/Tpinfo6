@@ -45,10 +45,14 @@
   <ItemGroup>
     <Compile Include="Animaux.cs" />
     <Compile Include="Ferme.cs" />
+    <Compile Include="Initialisation.cs" />
     <Compile Include="Ioutils.cs" />
+    <Compile Include="NatureOccupant.cs" />
     <Compile Include="Occupant.cs" />
+    <Compile Include="Outils.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quotidien.cs" />
     <Compile Include="Ressources.cs" />
     <Compile Include="RessourcesGenre.cs" />
     <Compile Include="Semaine.cs" />

@@ -8,10 +8,12 @@ namespace Tpinfo6
     public class Virus : Ressources
     {
         private int Incubation;
+        private int Virulence;
 
-        public Virus(int Incubation, RessourcesGenre Genre) : base(Genre)
+        public Virus(RessourcesGenre Genre, int Incubation, int Virulence) : base(Genre)
         {
             this.Incubation = Incubation;
+            this.Virulence = Virulence;
         }
 
         public int LIncubation
@@ -19,6 +21,12 @@ namespace Tpinfo6
             get { return LIncubation; }
             set { LIncubation = value;}
             
+        }
+
+        public int LaVirulence
+        {
+            get { return Virulence; }
+            set { Virulence = value;}
         }
     }
 }
