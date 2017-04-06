@@ -9,7 +9,7 @@ namespace Tpinfo6
 {
     class Program
     {
-        const double VERSION = 0.9; 
+        const double VERSION = 0.92; 
 
         static void Main(string[] args)
         {

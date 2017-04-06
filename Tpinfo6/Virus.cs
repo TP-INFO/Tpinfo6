@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Tpinfo6
 {
+    /// <summary>
+    /// Class publique implémentant un terrible virus au effet dévastateur
+    /// </summary>
     class Virus : NewHumanity
     {
 

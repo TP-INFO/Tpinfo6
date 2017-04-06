@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Tpinfo6
 {
+    /// <summary>
+    /// Classe publique permettant de créer un Couteau et de lui attribuer des méthodes
+    /// </summary>
     public class Couteau : Tools
     {
 

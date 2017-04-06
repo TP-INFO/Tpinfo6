@@ -6,10 +6,14 @@ using System.Threading.Tasks;
 
 namespace Tpinfo6
 {
+    /// <summary>
+    /// Classe abstraite représentant les Animaux et compléter par l'interface IMammifere
+    /// </summary>
     public abstract class Animal : IMammifere
     {
         private string _nom;
 
+        //Accesseurs du Nom pour un animal
         public string Nom
         {
             get { return this._nom; }
@@ -18,6 +22,7 @@ namespace Tpinfo6
 
         private string _type;
 
+        //Accesseur du Type d'un animal
         public string Type
         {
             get { return this._type; }
@@ -62,6 +67,7 @@ namespace Tpinfo6
         {
             Console.WriteLine("\n\tVotre {0} est mort, paix à son âme !", Nom);
         }
+
 
         public void RentrerChezSoi()
         {

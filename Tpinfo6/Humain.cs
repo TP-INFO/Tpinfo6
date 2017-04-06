@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Tpinfo6
 {
+    /// <summary>
+    /// Classe publique permettant d'implémenter des méthodes nécessaires au humains
+    /// </summary>
     public class Humain : NewHumanity, IMammifere
     {
         /*──────────────────|

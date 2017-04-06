@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Tpinfo6
 {
+    /// <summary>
+    /// Interface implémentant des méthodes pour tous les êtres "vivants" de la ferme
+    /// </summary>
     interface IMammifere
     {
         /// <summary>

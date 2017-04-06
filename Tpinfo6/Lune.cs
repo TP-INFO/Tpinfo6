@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Tpinfo6
 {
+    /// <summary>
+    /// Classe publique représentant la Lune
+    /// </summary>
     public class Lune : Astre
     {
        /*──────────────────|
@@ -37,6 +40,9 @@ namespace Tpinfo6
        |   Constructeurs   |
        |──────────────────*/
 
+        /// <summary>
+        /// Constructeur d'une Lune
+        /// </summary>
         public Lune()
         {
 

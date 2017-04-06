@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Tpinfo6
 {
+    /// <summary>
+    /// Classe publique représentant le Soleil
+    /// </summary>
     public class Soleil : Astre
     {
 
@@ -36,6 +39,9 @@ namespace Tpinfo6
         |   Constructeurs   |
         |──────────────────*/
 
+        /// <summary>
+        /// Constructeur d'un soleil
+        /// </summary>
         public Soleil()
         {
 

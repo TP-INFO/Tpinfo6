@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Tpinfo6
 {
+    /// <summary>
+    /// Classe publique permettant de créer une chèvre et de lui attribuer des méthodes
+    /// </summary>
     public class Chevre : Animal
     {
         /*──────────────────|

@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Tpinfo6
 {
+    /// <summary>
+    /// Classe abstraite définissant l'ensemble de la Flore dans notre ferme
+    /// </summary>
     public abstract class Flora
     {
         private string _variete;

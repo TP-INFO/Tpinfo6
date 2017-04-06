@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Tpinfo6
 {
+    /// <summary>
+    /// Classe publique permettant de créer un Abricotier et de lui attribuer des méthodes
+    /// </summary>
     public class Abricotier : Flora
     {
         /// <summary>

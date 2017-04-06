@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Tpinfo6
 {
+    /// <summary>
+    /// Classe publique permettant de créer un Clone et de lui attribuer des méthodes
+    /// </summary>
     public struct Clone : IMammifere
     {
         /// <summary>

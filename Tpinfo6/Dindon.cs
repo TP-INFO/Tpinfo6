@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Tpinfo6
 {
+    /// <summary>
+    /// Classe publique permettant de créer un Dindon et de lui attribuer des méthodes
+    /// </summary>
     public class Dindon : Animal
     {
 

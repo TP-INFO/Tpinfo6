@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Tpinfo6
 {
+    /// <summary>
+    /// Classe publique permettant à un fermier d'avoir du Maïs
+    /// </summary>
     public class Mais : Flora
     {
         /// <summary>
@@ -59,6 +62,10 @@ namespace Tpinfo6
         /*──────────────────|
         |   Constructeurs   |
         |──────────────────*/
+
+        /// <summary>
+        /// Constrcuteur de Maïs
+        /// </summary>
         public void Maïs()
         {
 
