@@ -5,10 +5,11 @@ using System.Text;
 
 namespace Tpinfo6
 {
-    public enum RessourcesGenre
+    public enum TypeVivant
     {
         Animal,
         Vegetal,
-        Virus
+        Humain,
+        Artificiel
     }
 }

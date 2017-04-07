@@ -5,28 +5,15 @@ using System.Text;
 
 namespace Tpinfo6
 {
-    public class Virus : Ressources
+    public class Virus : Vivant
     {
-        private int Incubation;
-        private int Virulence;
+        private int Incubation { get; set; }
+        private int Virulence { get; set; }
 
-        public Virus(RessourcesGenre Genre, int Incubation, int Virulence) : base(Genre)
+        public Virus(TypeVivant Type, bool Affame, bool Malade, int Resistance, int Incubation, int Virulence) :base(Type, Affame, Malade, Resistance)
         {
-            this.Incubation = Incubation;
-            this.Virulence = Virulence;
-        }
 
-        public int LIncubation
-        {
-            get { return LIncubation; }
-            set { LIncubation = value;}
-            
         }
-
-        public int LaVirulence
-        {
-            get { return Virulence; }
-            set { Virulence = value;}
-        }
+        
     }
 }
