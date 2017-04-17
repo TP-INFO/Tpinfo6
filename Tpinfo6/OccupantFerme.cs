@@ -7,11 +7,17 @@ namespace Tpinfo6
 {
     public class OccupantFerme : Occupant
     {
-        private int _Prenom { get; set; }
+        private string _prenom;
 
-        public OccupantFerme(TypeVivant Type, string Prenom, string Nom, bool Affame, bool Malade, int Resistance) :base(Type, Nom, Affame, Malade, Resistance)
+        public OccupantFerme(TypeVivant type, string prenom) : base(type)
         {
+            _prenom = prenom;
+        }
 
+        public string LePrenom
+        {
+            get { return _prenom; }
+            set { _prenom = value; }
         }
     }
 }

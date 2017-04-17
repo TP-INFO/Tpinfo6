@@ -10,6 +10,6 @@ namespace Tpinfo6
         Animal,
         Vegetal,
         Humain,
-        Artificiel
+        Artificiel,
     }
 }

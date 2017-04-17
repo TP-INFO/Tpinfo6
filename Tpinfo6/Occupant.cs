@@ -11,11 +11,14 @@ namespace Tpinfo6
     /// </summary>
     public class Occupant : Vivant, IQuotidien
     {
-        private string _Nom { get; set; }
+        private string _nom;
 
-        public Occupant(TypeVivant Type, string Nom, bool Affame, bool Malade, int Resistance) :base(Type, Affame, Malade, Resistance)
+        public Occupant(TypeVivant type): base(type) { }
+
+        public string LeNom
         {
-
+            get { return _nom; }
+            set { _nom = value; }
         }
 
         public void Nourrir()
@@ -31,8 +34,16 @@ namespace Tpinfo6
         public void Recolter()
         {
             throw new NotImplementedException();
-        }  
+        }
 
-       
+        //public override void CreerTroupeau(int nbreVivant)
+        //{
+        //    throw new NotImplementedException();
+        //}
+
+        public override void AfficherTroupeau()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
