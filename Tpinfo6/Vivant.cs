@@ -10,7 +10,7 @@ namespace Tpinfo6
         private TypeVivant _type;
         private string _satiete;
         private string _sante;
-        private int _resistance;
+        protected int _resistance;
 
         public Vivant(TypeVivant type)
         {

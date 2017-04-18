@@ -17,6 +17,10 @@ namespace Tpinfo6
             Cerisier cerisier1 = new Cerisier(TypeVivant.Vegetal);
             Console.WriteLine("La résistance de "+cerisier1.LeType+"1 est de "+cerisier1.LaResistance);
 
+            Console.WriteLine(cerisier.LaResistance);
+            Console.WriteLine(cerisier1.LaResistance);
+
+            
             //cerisier.CreerTroupeau(3);
             //cerisier.AfficherTroupeau();
 
