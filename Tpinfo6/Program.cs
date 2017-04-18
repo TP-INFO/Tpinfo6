@@ -18,12 +18,13 @@ namespace Tpinfo6
             //Vegetal[] arbes = new Vegetal[10];
 
 
-            
+
             // Lance le programme.
             // TODO à mettre en invite de commande.
-            Initialisation.InitialisationDeb();
 
-
+            Abricotier abri1 = new Abricotier(TypeVivant.Vegetal,20);
+            
+            TroupeauMohamed<Abricotier> ListAbricotier = new TroupeauMohamed<Abricotier>(10);
             
 
 

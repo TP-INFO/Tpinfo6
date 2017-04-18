@@ -11,9 +11,9 @@ namespace Tpinfo6
     /// </summary>
     public class Occupant : Vivant, IQuotidien
     {
-        private string _Nom { get; set; }
+        private string _nom { get; set; }
 
-        public Occupant(TypeVivant Type, string Nom, bool Affame, bool Malade, int Resistance) :base(Type, Affame, Malade, Resistance)
+        public Occupant(TypeVivant type, string nom, bool affame, bool malade) :base(type, affame, malade)
         {
 
         }

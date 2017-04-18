@@ -7,9 +7,9 @@ namespace Tpinfo6
 {
     public class OccupantFerme : Occupant
     {
-        private int _Prenom { get; set; }
+        private int _prenom { get; set; }
 
-        public OccupantFerme(TypeVivant Type, string Prenom, string Nom, bool Affame, bool Malade, int Resistance) :base(Type, Nom, Affame, Malade, Resistance)
+        public OccupantFerme(TypeVivant type, string prenom, string nom, bool affame, bool malade, int resistance) :base(type, nom, affame, malade)
         {
 
         }

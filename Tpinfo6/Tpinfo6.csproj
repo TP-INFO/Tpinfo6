@@ -44,13 +44,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abricotier.cs" />
-    <Compile Include="Cerisier.cs" />
-    <Compile Include="Chevre.cs" />
-    <Compile Include="Chou.cs" />
-    <Compile Include="Dindon.cs" />
     <Compile Include="Ferme.cs" />
     <Compile Include="Ioutils.cs" />
-    <Compile Include="Mais.cs" />
     <Compile Include="Occupant.cs" />
     <Compile Include="OccupantFerme.cs" />
     <Compile Include="Outils.cs" />
@@ -59,8 +54,8 @@
     <Compile Include="Quotidien.cs" />
     <Compile Include="Semaine.cs" />
     <Compile Include="Troupeau.cs" />
+    <Compile Include="TroupeauMohamed.cs" />
     <Compile Include="TypeVivant.cs" />
-    <Compile Include="Virus.cs" />
     <Compile Include="Vivant.cs" />
   </ItemGroup>
   <ItemGroup>

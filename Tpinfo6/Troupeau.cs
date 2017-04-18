@@ -7,9 +7,10 @@ namespace Tpinfo6
 {
     public class Troupeau
     {
+
         public void CreerTroupeau()
         {
-            throw new System.NotImplementedException();
+            
         }
 
         public void ModifierTroupeau()
