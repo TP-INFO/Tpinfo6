@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Abricotier.cs" />
+    <Compile Include="Cerisier.cs" />
     <Compile Include="Ferme.cs" />
     <Compile Include="Ioutils.cs" />
     <Compile Include="Occupant.cs" />
@@ -53,8 +53,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Quotidien.cs" />
     <Compile Include="Semaine.cs" />
-    <Compile Include="Troupeau.cs" />
-    <Compile Include="TroupeauMohamed.cs" />
     <Compile Include="TypeVivant.cs" />
     <Compile Include="Vivant.cs" />
   </ItemGroup>
