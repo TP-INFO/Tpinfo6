@@ -10,12 +10,14 @@ namespace Tpinfo6
         private TypeVivant _type;
         private string _satiete;
         private string _sante;
-        protected int _resistance;
+        private int _resistance;
+        private static readonly Random rdn = new Random();
+
+
 
         public Vivant(TypeVivant type)
         {
             _type = type;
-            Random rdn = new Random();
             _resistance = rdn.Next(5, 21);                
         }
         
