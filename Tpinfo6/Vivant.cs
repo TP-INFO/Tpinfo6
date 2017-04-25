@@ -7,7 +7,7 @@ namespace Tpinfo6
 {
     public abstract class Vivant
     {
-        private TypeVivant _type;
+        private TypeRessources _type;
         private string _satiete;
         private string _sante;
         private int _resistance;
@@ -15,18 +15,20 @@ namespace Tpinfo6
 
 
 
-        public Vivant(TypeVivant type)
+        public Vivant(TypeRessources type)
         {
             _type = type;
-            _resistance = rdn.Next(5, 21);                
+            _resistance = rdn.Next(5, 21);
         }
-        
 
-        public TypeVivant LeType
+
+
+        public TypeRessources LeType
         {
             get { return _type; }
             set { _type = value; }
         }
+        
         public string LaSatiete
         {
             get { return _satiete; }
@@ -43,9 +45,9 @@ namespace Tpinfo6
             get { return _resistance; }
             set { _resistance = value; }
         }
-        //public abstract void CreerTroupeau(int nbreVivant);
+        
 
-        public abstract void AfficherTroupeau();
+
 
 
     }

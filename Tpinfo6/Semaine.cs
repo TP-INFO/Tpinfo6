@@ -7,12 +7,20 @@ namespace Tpinfo6
 {
     public enum Semaine
     {
-        Lundi = 1,
-        Mardi = 2,
-        Mercredi = 3,
-        Jeudi = 4,
-        Vendredi = 5,
-        Samedi = 6,
-        Dimanche = 7
+      LundiJour,
+      LundiNuit,
+      MardiJour,
+      Mardinuit,
+      MercrediJour,
+      MercrediNuit,
+      JeudiJour,
+      JeudiNuit,
+      VendrediJour,
+      VendrediNuit,
+      SamediJour,
+      SamediNuit,
+      DimancheJour,
+      DimancheNuit,
+       
     }
 }

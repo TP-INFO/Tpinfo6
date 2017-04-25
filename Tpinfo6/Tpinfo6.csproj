@@ -46,20 +46,17 @@
     <Compile Include="Cerisier.cs" />
     <Compile Include="Ferme.cs" />
     <Compile Include="Ioutils.cs" />
-    <Compile Include="Occupant.cs" />
-    <Compile Include="OccupantFerme.cs" />
     <Compile Include="Outils.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Quotidien.cs" />
+    <Compile Include="Ressources.cs" />
     <Compile Include="Semaine.cs" />
-    <Compile Include="Troupeau.cs" />
-    <Compile Include="TypeVivant.cs" />
+    <Compile Include="TypeRessources.cs" />
     <Compile Include="Vivant.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
